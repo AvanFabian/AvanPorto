@@ -16,7 +16,7 @@ function page() {
         opacity: 1,
         transition: {
           duration: 0.8,
-          delay: 0.9,
+          // delay: 0.9,
           type: "spring",
           stiffness: 200,
         },
@@ -52,7 +52,7 @@ function page() {
             filter: "blur(0px)",
             transition: {
               duration: 0.8,
-              delay: 0.9,
+              // delay: 0.9,
               type: "spring",
               stiffness: 200,
             },

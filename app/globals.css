@@ -62,3 +62,24 @@
     background-position: 1080px;
   }
 }
+
+/* Scrollbar modification */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgb(239, 237, 237);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(38, 5, 2, 0.8);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(57, 7, 2, 0.8);
+}

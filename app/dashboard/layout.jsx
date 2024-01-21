@@ -1,5 +1,5 @@
-import View from "@/app/ui/dashboard/View/page";
-import Left from "@/app/dashboard/Left/page";
+import Right from "@/components/dashboard/Right/page";
+import Left from "@/components/dashboard/Left/page";
 import Theming from "@/components/providers/Theme";
 
 export default function RootLayout({ children }) {
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
               <Left />
 
               {children}
-              <View />
+              <Right />
             </div>
           </div>
         </Theming>

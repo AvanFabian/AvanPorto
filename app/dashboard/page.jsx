@@ -1,5 +1,5 @@
 import React from "react";
-import HomePage from "@/app/HomePage/page";
+import HomePage from "@/components/dashboard/HomePage/page";
 
 function Dashboard() {
   return (
