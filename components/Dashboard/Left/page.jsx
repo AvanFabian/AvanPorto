@@ -50,15 +50,15 @@ function Leftpage() {
   return (
     <div>
       <motion.div
-        initial={{ x: -100, opacity: 0, filter: "blur(4px)" }}
+        initial={{ x: -200, opacity: 0, filter: "blur(4px)" }}
         animate={{
           x: 0,
           opacity: 1,
           filter: "blur(0px)",
           transition: {
-            duration: 0.8,
+            duration: 1.25,
             // delay: 0.9,
-            type: "spring",
+            type: "Tween",
             stiffness: 200,
           },
         }}

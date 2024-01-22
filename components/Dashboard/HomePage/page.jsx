@@ -17,14 +17,15 @@ import "react-vertical-timeline-component/style.min.css";
 function Homepage() {
   return (
     <motion.div
-      initial={{ y: -100, opacity: 0 }}
+      initial={{ y: -200, opacity: 0 }}
       animate={{
         y: 0,
         opacity: 1,
         transition: {
-          duration: 0.8,
+          duration: 1.25,
           // delay: 0.9,
-          type: "spring",
+          type: "Tween",
+          // ease: "easeInOut",
           stiffness: 200,
         },
       }}
@@ -32,52 +33,68 @@ function Homepage() {
     >
       <div className="  bg-[#1C1C1C] lg:bg-transparent rounded-2xl ">
         <div>
-          <div className="flex p-4">
+          <div className="flex py-4">
             {/* <PiCodeThin className="text-6xl text-neutral-50" /> */}
-            <h1 className=" text-2xl font-bold uppercase selection:bg-[#c3c8ce]  text-[#34373b]">
-              Preview Projects
+            <h1 className=" text-2xl font-bold uppercase selection:bg-[#c3c8ce] text-[#34373b]">
+              Projects Preview
             </h1>
           </div>
 
-          <div className="border border-neutral-700 mb-5" />
-          <div className="bg-[#bfc7d1 ] rounded-xl w-full p-2">
+          <div className="border border-neutral-400 mb-5" />
+          <div className="rounded-xl w-full p-2">
             {projectsDataPreview.map((project, idx) => (
-              <div className="bg-[#e1e4e6] rounded-lg mb-3 text-[#1E2022] w-full border-[1px] hover:bg-[#b2b5b7] duration-200 transition-all ease-in  border-neutral-400">
+              <div className="bg-[#e1e4e6] rounded-2xl mb-3 text-[#1E2022] w-full border-[1px] hover:bg-[#b2b5b7] duration-200 transition-all ease-in  border-neutral-400">
                 <Link href={`/dashboard/${project.id}`} key={project.title}>
-                  <div className="p-4 ">
-                    <div className="flex items-center gap-x-3">
+                  <motion.div 
+                    className="p-2 "
+                    initial={{ x: 200, opacity: 0 }}
+                    animate={{
+                      x: 0,
+                      opacity: 1,
+                      transition: {
+                        duration: 1,
+                        delay: 0.7,
+                        type: "Tween",
+                        // ease: "easeInOut",
+                        stiffness: 200,
+                      },
+                    }}
+                  >
+                    <div className="flex gap-x-2">
                       <Image
                         width={1000}
                         height={1000}
-                        className="w-40 h-[160px] bg-auto rounded-md"
+                        className="w-[400px] h-[250px] bg-cover rounded-lg select-none"
                         src={project.image}
                         alt={project.title}
                       />
-                      <div>
-                        <h2 className="text-base text-[#1E2022] font-semibold">
-                          {project.title}
-                        </h2>
-                        <h2 className="text-[18px] text-[#1E2022] font-normal">
-                          {project.shortdesc}
-                        </h2>
-                        <span className="text-xs">{project.createdAt}</span>
+                      <div className="w-full flex flex-col align-top">
+                          <div className="flex flex-row">
+                            <span className="text-2xl text-[#1E2022] font-bold selection:bg-[#c3c8ce]">
+                              {project.title}
+                            </span>
+                          </div>
+                          <span className="text-[16px] antialiased font-RubikRegular my-1 mr-2 text-justify capitalize selection:bg-[#c3c8ce]">
+                            {project.shortdesc}
+                          </span>
+                          <div className="flex items-end w-full h-full text-sm text-[#1E2022] align-bottom font-light selection:bg-[#c3c8ce]">{project.createdAt}</div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                  </motion.div>
                 </Link>
               </div>
             ))}
           </div>
           {/* recent */}
 
-          <div className="flex p-4">
+          <div className="flex py-4">
             {/* <PiCodeThin className="text-6xl text-neutral-50" /> */}
             <h1 className=" text-2xl font-bold uppercase text-[#34373b] selection:bg-[#c3c8ce]">
               Recent Projects
             </h1>
           </div>
 
-          <div className="border border-neutral-700 mb-5" />
+          <div className="border border-neutral-400 mb-5" />
 
           <div className="mt-6  bg-[#1C1C1C] rounded-lg text-neutral-400">
             <div className="duration-200 transition-all ease-in p-4">

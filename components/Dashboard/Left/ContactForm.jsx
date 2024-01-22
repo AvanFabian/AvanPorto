@@ -63,35 +63,35 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
         className="flex flex-col"
       >
-        <label className="flex flex-col self-start font-medium text-xs select-none text-[#1E2022] mb-1">Your Name</label>
+        {/* <label className="flex flex-col self-start font-medium text-xs select-none text-[#1E2022] mb-1">Your Name</label> */}
         <input
           type="text"
           name="name"
           value={form.name}
           onChange={handleChange}
-          placeholder="avan fabian"
+          placeholder="Fill in with your name"
           required
-          className="py-1 px-3 rounded-md autofill:bg-[#34373b] bg-[#34373b] caret-[#e1e4e6] placeholder:select-none placeholder:-translate-y-[4px] placeholder:capitalize placeholder:text-[#e1e4e6] placeholder:text-[16px]" />
+          className="py-1 w-full text-[16px] focus:outline-none bg-transparent border-b-[1px] border-neutral-400 caret-[#2d2e2f] placeholder:select-none placeholder:translate-y-[2px] placeholder:capitalize placeholder:text-[1E2022] placeholder:text-[16px]" />
 
-        <label className="flex flex-col self-start font-medium text-xs text-[#1E2022] select-none mt-2 mb-1">Your Email</label>
+        {/* <label className="flex flex-col self-start font-medium text-xs text-[#1E2022] select-none mt-2 mb-1">Your Email</label> */}
         <input
           type="email"
           name="email"
           value={form.email}
           onChange={handleChange}
-          placeholder="avan@gmail.com"
+          placeholder="Fill in with your @email"
           required
-          className="py-1 px-3 rounded-md autofill:bg-[#34373b] bg-[#34373b] placeholder:select-none caret-[#e1e4e6] placeholder:-translate-y-[4px] placeholder:text-[#e1e4e6] placeholder:text-[16px]" />
-        <label className="flex flex-col self-start font-medium text-xs text-[#1E2022] select-none mt-2 mb-1">Message</label>
-        <textarea
-          id="message"
+          className="py-1 mt-5 w-full text-[16px] focus:outline-none bg-transparent border-b-[1px] border-neutral-400 caret-[#2d2e2f] placeholder:select-none placeholder:translate-y-[2px] placeholder:capitalize placeholder:text-[1E2022] placeholder:text-[16px]" />
+        {/* <label className="flex flex-col self-start font-medium text-xs text-[#1E2022] select-none mt-2 mb-1">Message</label> */}
+        <input
+          type="message"
           name="message"
           value={form.message}
           onChange={handleChange}
-          className="rounded-md py-2 px-3 bg-[#34373b] caret-[#e1e4e6] placeholder:select-none placeholder:text-[#e1e4e6] placeholder:text-[16px]"
-          placeholder="Hi, I would like to work with you."
-          required></textarea>
-        <button type="submit" className="bg-[#282828] cursor-pointer h-7 py-1 mt-2 rounded-md text-xs w-[160px] font-RubikMedium text-[#E1E4E6]" >
+          placeholder="Write your message here"
+          required
+          className="py-1 mt-5 w-full text-[16px] focus:outline-none bg-transparent border-b-[1px] border-neutral-400 caret-[#2d2e2f] placeholder:select-none placeholder:translate-y-[2px] placeholder:capitalize placeholder:text-[1E2022] placeholder:text-[16px]" />
+        <button type="submit" className="bg-[#282828] cursor-pointer h-7 py-1 mt-4 rounded-md text-xs w-[160px] font-RubikMedium text-[#E1E4E6]" >
           <span className="select-none">Send</span>
         </button>
       </form>
