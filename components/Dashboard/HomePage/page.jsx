@@ -17,6 +17,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 function Homepage() {
   const [isHovered, setIsHovered] = React.useState(false);
+  // const [isHovered2, setIsHovered2] = React.useState(false);
   return (
     <motion.div
       initial={{ y: -200, opacity: 0 }}
@@ -61,18 +62,17 @@ function Homepage() {
               }}>
               <div className="relative">
                 <Image
-                  width={1000}
-                  height={667}
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
-                  className={`w-[475px] h-[275px] bg-cover rounded-lg select-none transition-opacity duration-200 ease-in ${isHovered ? "opacity-10" : "opacity-100"
-                    }`}
+                  width={475}
+                  height={275}
+                  className={`w-[475px] h-[275px] bg-cover rounded-lg select-none transition-opacity duration-200 ease-in ${isHovered ? "opacity-10" : "opacity-100"}`}
                   src={project.image}
                   alt={project.title}
                 />
                 {/* <div className="absolute top-0 opacity-0 hover:opacity-100 px-8 py-7 duration-200 transition-all ease-in"></div> */}
                 <div
-                  className={`hidden absolute top-0 left-0 px-8 py-7 duration-200 transition-all ease-in ${isHovered ? "opacity-100" : "opacity-0"}`}
+                  className={`absolute top-0 left-0 w-[475px] h-[275px] px-8 py-7 duration-200 transition-all ease-in ${isHovered ? "opacity-100" : "opacity-0"}`}
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
                 >
                   <p className="text-[13px] font-medium text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt minus ratione repellendus aliquam nihil architecto libero harum dolore alias esse!</p>
                   <Button asChild className="w-[80px] h-[40px] p-2 rounded-md">
