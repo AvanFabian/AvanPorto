@@ -16,7 +16,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 
 function Homepage() {
-  const [open, setOpen] = React.useState(false);
+  const [isHovered, setIsHovered] = React.useState(false);
   return (
     <motion.div
       initial={{ y: -200, opacity: 0 }}
@@ -59,23 +59,29 @@ function Homepage() {
                   stiffness: 200,
                 },
               }}>
-              <div className="w-min relative">
+              <div className="relative">
                 <Image
                   width={1000}
                   height={667}
-                  className='w-[475px] h-[275px] hover:opacity-10 duration-200 transition-all ease-in bg-cover rounded-lg select-none'
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  className={`w-[475px] h-[275px] bg-cover rounded-lg select-none transition-opacity duration-200 ease-in ${isHovered ? "opacity-10" : "opacity-100"
+                    }`}
                   src={project.image}
                   alt={project.title}
                 />
+                {/* <div className="absolute top-0 opacity-0 hover:opacity-100 px-8 py-7 duration-200 transition-all ease-in"></div> */}
+                <div
+                  className={`hidden absolute top-0 left-0 px-8 py-7 duration-200 transition-all ease-in ${isHovered ? "opacity-100" : "opacity-0"}`}
+                >
+                  <p className="text-[13px] font-medium text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt minus ratione repellendus aliquam nihil architecto libero harum dolore alias esse!</p>
+                  <Button asChild className="w-[80px] h-[40px] p-2 rounded-md">
+                    <Link href="/dashboard/all-project"><p className="font-bold text-[13px] ">See Detail!</p></Link>
+                  </Button>
+                </div>
               </div>
             </motion.div>
           ))}
-          {/* <div className={open ? 'absolute' : 'hidden'}>
-            <p className="text-[13px] font-medium text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt minus ratione repellendus aliquam nihil architecto libero harum dolore alias esse!</p>
-            <Button asChild className="w-min rounded-2xl">
-              <Link href="/dashboard/all-project"><p className="font-bold text-[13px] ">See Detail!</p></Link>
-            </Button>
-          </div> */}
           <Button asChild className="my-auto mx-auto w-min rounded-2xl">
             <Link href="/dashboard/all-project"><span className="font-bold">See More!</span></Link>
           </Button>
