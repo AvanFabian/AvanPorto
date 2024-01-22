@@ -4,7 +4,7 @@ import { PiHouseLight, PiGithubLogoLight } from "react-icons/pi";
 
 function page() {
   return (
-    <div className=" ">
+    <>
       <div className="p-5 fixed bottom-28 flex flex-col items-center justify-center mx-auto   w-full ">
         <div className="bg-neutral-600 rounded-full ">
           <Image
@@ -37,7 +37,7 @@ function page() {
           </span>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

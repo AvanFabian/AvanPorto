@@ -10,6 +10,8 @@ import {
 } from "react-icons/pi";
 import { SiAdobe } from "react-icons/si";
 
+import { ModeToggle } from "@/components/providers/switcher";
+
 import { motion, useAnimation } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -100,7 +102,6 @@ function Leftpage() {
             <div className="flex gap-x-1 w-full h-fit">
               <Link
                 href="/"
-                target="_blank"
                 className="bg-[#282828] w-min text-neutral-300 rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
                 Home
               </Link>
@@ -111,6 +112,10 @@ function Leftpage() {
                 className="bg-[#282828] w-min text-neutral-300 rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
                 Blog
               </Link>
+              {/* <div>
+                <ModeToggle />
+              </div> */}
+
             </div>
           </div>
 

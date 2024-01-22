@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  body {
+      @apply dark:bg-gray-800 bg-white
+  }
+}
+
 @font-face {
   font-family: RubikBold;
   src: url("../public//font//Rubik-Bold.ttf");
