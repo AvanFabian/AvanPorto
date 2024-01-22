@@ -8,9 +8,8 @@ import {
   PiShapesThin,
   PiHouseLight,
 } from "react-icons/pi";
-import { SiAdobe } from "react-icons/si";
 
-import { ModeToggle } from "@/components/providers/switcher";
+import ContactForm from "@/components/dashboard/Left/ContactForm"
 
 import { motion, useAnimation } from "framer-motion";
 import Link from "next/link";
@@ -63,53 +62,40 @@ function Leftpage() {
             stiffness: 200,
           },
         }}
-        className=" hidden md:block bg-[#1C1C1C] w-full md:w-80 h-fit top-5 "
+        className=" hidden md:block rounded-2xl w-full md:w-80 sticky h-fit top-5 "
       >
 
-        <div className=" md:w-80 w-full p-3 border border-neutral-800 rounded-2xl h-fit bg-[#1C1C1C]">
+        <div className=" md:w-80 w-full p-3 border border-neutral-400 rounded-2xl h-fit bg-[#E1E4E6]">
           <div className="flex">
             <div
-              className="w-full relative"
-            >
+              className="w-full relative basis-4/6">
               <Image
                 width={1000}
                 height={1000}
                 className="w-28 h-28 rounded-full object-cover"
                 src="/black.jpeg"
-                alt=""
+                alt="Avan Fabian"
               />
-              {/* <div
-                onClick={() => setOpen(!open)}
-                className="bg-lime-400 w-3 h-3 cursor-pointer rounded-full absolute top-20 right-28 animate-pulse"
-              /> */}
-
-              {/* {open && (
-                <div className="border border-lime-400 h-5 flex items-center justify-center rounded-2xl w-fit px-2 absolute top-[4.7rem] right-3 ">
-                  <p className="text-[9px] font-RubikMedium text-lime-300">
-                    Open to freelancing
-                  </p>
-                </div>
-              )} */}
-              <h1 className="font-RubikExtraBold text-xl text-neutral-300 mt-3">
+              <h1 className="font-RubikExtraBold text-xl text-[#1E2022] mt-3 selection:bg-[#c3c8ce]">
                 Avan Fabian
               </h1>
 
-              <p className="text-xs font-RubikMedium text-neutral-300 mt-1">
+              <p className="text-xs font-RubikMedium text-[#1E2022] mt-1 selection:bg-[#c3c8ce]">
                 Universitas Negeri Malang 🌍
               </p>
             </div>
 
-            <div className="flex gap-x-1 w-full h-fit">
+            <div className="flex gap-x-2 basis-2/6 w-full h-fit">
               <Link
                 href="/"
-                className="bg-[#282828] w-min text-neutral-300 rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
+                className="bg-[#282828] w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
                 Home
               </Link>
               {/* ini */}
               <Link
                 href="https://www.facebook.com/"
                 target="_blank"
-                className="bg-[#282828] w-min text-neutral-300 rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
+                className="bg-[#282828] w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
                 Blog
               </Link>
               {/* <div>
@@ -138,59 +124,20 @@ function Leftpage() {
             </motion.button>
           </form> */}
 
-          <div className="w-full mt-5 text-neutral-300">
-            <h2 className="font-RubikBold my-4">Resume</h2>
-            <p className="text-[12px] font-RubikRegular my-3">
+          {/* resume */}
+          <div className="w-full mt-5 text-[#1E2022]">
+            <h2 className="font-bold text-base my-2 selection:bg-[#c3c8ce]">Resume</h2>
+            <p className="text-[13px] antialiased text-justify font-RubikRegular mb-3 selection:bg-[#c3c8ce]">
               Avan Fabian Daniswara. A one and a half year Informatics student, with a focus on Data Science and Software Engineering. he's passionate on building effective application which can solve a real problem.
             </p>
-            <p className="text-[12px] font-RubikRegular my-3">
+            <p className="text-[13px] antialiased text-justify font-RubikRegular my-3 selection:bg-[#c3c8ce]">
               Avan is a dedicated to continuous hard skill and soft skill learner. As a student, he's constantly seeking new challenges and opportunities to expand his skill set. In addition to his technical expertise, he also started exploring soft skill like learn english language, how to communicate effectively to gain a well-rounded readiness level of real word job. This commitment to learning ensures that he's well-equipped to adapt to the evolving job landscape.
             </p>
-
-            {/* <div className="mt-6 flex justify-between text-sm">
-              <div className="flex items-center gap-x-1">
-                <PiShapesThin />
-                <span className="text-xs font-RubikRegular">
-                  7 Years as a Developer
-                </span>
-              </div>
-              <div className="flex items-center gap-x-1">
-                <PiMagicWandThin />
-                <span className="text-xs font-RubikRegular">24 Projects</span>
-              </div>
-            </div> */}
-
-            {/* <div className="border border-[#282828] text-neutral-300 my-6" /> */}
-
-            {/* <div className="my-4 ">
-              <h1 className="font-RubikRegular">Educational History</h1>
-              <div className="mt-7 flex  justify-between">
-                <div className="flex gap-x-3">
-                  <PiGoogleLogoThin className="text-xl" />
-                  <div className="-mt-1">
-                    <h3 className="text-sm font-RubikMedium">Sr. Developer</h3>
-                    <p className="text-[9px]">Google</p>
-                  </div>
-                </div>
-                <small className="text-[9px] text-neutral-300">
-                  January 2020 - Current
-                </small>
-              </div>
-              <div className="my-3 flex  justify-between">
-                <div className="flex gap-x-3">
-                  <SiAdobe className="text-xl" />
-                  <div className="-mt-1">
-                    <h3 className="text-sm font-RubikMedium">
-                      Jr. Creative Dev
-                    </h3>
-                    <p className="text-[9px]">Adobe</p>
-                  </div>
-                </div>
-                <small className="text-[9px] text-neutral-300">
-                  Sep 2016 - January 2020
-                </small>
-              </div>
-            </div> */}
+          </div>
+          {/* contact */}
+          <div className="w-full mt-5 text-[#1E2022]">
+            <h2 className="font-bold text-base my-2 selection:bg-[#c3c8ce]">Reach Me</h2>
+            <ContactForm />
           </div>
         </div>
       </motion.div>

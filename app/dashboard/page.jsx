@@ -3,7 +3,7 @@ import HomePage from "@/components/dashboard/HomePage/page";
 
 function Dashboard() {
   return (
-    <div className="">
+    <div className="w-full mx-3">
       <HomePage />
     </div>
   );

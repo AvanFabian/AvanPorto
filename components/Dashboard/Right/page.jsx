@@ -26,12 +26,12 @@ function page() {
     >
       <div className=" md:w-60 w-full rounded-2xl h-fit sticky top-5 ">
         <div>
-          <div className="bg-[#1C1C1C] text-center min-w-min rounded-2xl p-4 border border-neutral-800 h-fit">
-            <h2 className="font-RubikBold text-neutral-200">
-              Reach Me!
+          <div className="bg-[#E1E4E6] text-center min-w-min rounded-2xl p-4 border border-neutral-400 h-fit">
+            <h2 className="font-bold text-[#1E2022] uppercase antialiased">
+              Reach Me
             </h2>
             <form action="" className="flex flex-col w-full">
-              <label className="flex flex-col self-start font-medium text-sm text-neutral-100 mt-4 mb-1">Your Email</label>
+              <label className="flex flex-col self-start font-medium text-sm text-[#1E2022] mt-4 mb-1">Your Email</label>
               <input
                 type="email"
                 id="email"
@@ -39,14 +39,14 @@ function page() {
                 placeholder="avan@gmail.com"
                 required
                 className="py-1 px-3 rounded-md placeholder:text-[#9b9595] placeholder:text-[16px]" />
-              <label className="flex flex-col self-start font-medium text-sm text-neutral-100 mt-4 mb-1">Message</label>
+              <label className="flex flex-col self-start font-medium text-sm text-[#1E2022] mt-4 mb-1">Message</label>
               <textarea
                 id="message"
                 name="message"
                 className="rounded-md py-2 px-3 placeholder:text-[#9b9595] placeholder:text-[16px]"
                 placeholder="Hi, I would like to work with you."
                 required></textarea>
-              <input type="submit" value="Send" className="bg-[#696969] cursor-pointer h-7 p-1 mt-8 rounded-md text-xs w-full font-RubikMedium text-neutral-50" />
+              <input type="submit" value="Send" className="bg-[#282828] cursor-pointer h-7 p-1 mt-8 rounded-md text-xs w-full font-RubikMedium text-[#E1E4E6]" />
             </form>
 
             <div className="border border-neutral-700 mb-5 mt-8" />
