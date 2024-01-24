@@ -2,47 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  body {
-      @apply dark:bg-gray-800 bg-white
-  }
-}
 
 @font-face {
-  font-family: RubikBold;
-  src: url("../public//font//Rubik-Bold.ttf");
+  font-family: 'SpaceGroteskBold';
+  src: url("../public/font/SpaceGrotesk-Bold.ttf");
 }
 @font-face {
-  font-family: RubikExtraBold;
-  src: url("../public//font//Rubik-ExtraBold.ttf");
+  font-family: 'SpaceGroteskLight';
+  src: url("../public/font/SpaceGrotesk-Light.ttf");
 }
 @font-face {
-  font-family: RubikLight;
-  src: url("../public//font//Rubik-Light.ttf");
+  font-family: 'SpaceGroteskMedium';
+  src: url("../public/font/SpaceGrotesk-Medium.ttf");
 }
 @font-face {
-  font-family: RubikMedium;
-  src: url("../public//font//Rubik-Medium.ttf");
-}
-@font-face {
-  font-family: RubikRegular;
-  src: url("../public//font//Rubik-Regular.ttf");
+  font-family: 'SpaceGroteskRegular';
+  src: url("../public/font/SpaceGrotesk-Regular.ttf");
 }
 
 @layer base {
   body {
-    @apply bg-[#171717] transition-all ease-in duration-200;
+    @apply dark:bg-[#171717] transition-all ease-in duration-200;
   }
 }
 
-/* @layer utilities {
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-  .animation-delay-4000 {
-    animation-delay: 4s;
-  }
-} */
+.SpaceGroteskBold {
+  font-family: 'SpaceGroteskBold', sans-serif;
+}
+
+.SpaceGroteskLight {
+  font-family: 'SpaceGroteskLight', sans-serif;
+}
+
+.SpaceGroteskMedium {
+  font-family: 'SpaceGroteskMedium', sans-serif;
+}
+
+.SpaceGroteskRegular {
+  font-family: 'SpaceGroteskRegular', sans-serif;
+}
+
 
 .btn-shine {
   padding: 12px 0;

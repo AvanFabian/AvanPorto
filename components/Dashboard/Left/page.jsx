@@ -76,11 +76,11 @@ function Leftpage() {
                 src="/black.jpeg"
                 alt="Avan Fabian"
               />
-              <h1 className="font-RubikExtraBold text-xl text-[#1E2022] mt-3 selection:bg-[#c3c8ce]">
+              <h1 className="SpaceGroteskMedium text-xl text-[#1E2022] mt-3 selection:bg-[#c3c8ce]">
                 Avan Fabian
               </h1>
 
-              <p className="text-xs font-RubikMedium text-[#1E2022] mt-1 selection:bg-[#c3c8ce]">
+              <p className="text-xs SpaceGroteskMedium text-[#1E2022] mt-1 selection:bg-[#c3c8ce]">
                 Universitas Negeri Malang 🌍
               </p>
             </div>
@@ -88,14 +88,14 @@ function Leftpage() {
             <div className="flex gap-x-2 basis-2/6 w-full h-fit">
               <Link
                 href="/"
-                className="bg-[#282828] w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
+                className="bg-[#282828] SpaceGroteskRegular w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
                 Home
               </Link>
               {/* ini */}
               <Link
                 href="https://www.facebook.com/"
                 target="_blank"
-                className="bg-[#282828] w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
+                className="bg-[#282828] SpaceGroteskRegular w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
                 Blog
               </Link>
               {/* <div>
@@ -126,17 +126,17 @@ function Leftpage() {
 
           {/* resume */}
           <div className="w-full mt-5 text-[#1E2022]">
-            <h2 className="font-bold text-base my-2 selection:bg-[#c3c8ce]">Resume</h2>
-            <p className="text-[13px] antialiased text-justify font-RubikRegular mb-3 selection:bg-[#c3c8ce]">
+            <h2 className="SpaceGroteskBold text-base my-2 selection:bg-[#c3c8ce]">Resume</h2>
+            <p className="text-[13px] antialiased text-justify SpaceGroteskRegular mb-3 selection:bg-[#c3c8ce]">
               Avan Fabian Daniswara. A one and a half year Informatics student, with a focus on Data Science and Software Engineering. he's passionate on building effective application which can solve a real problem.
             </p>
-            <p className="text-[13px] antialiased text-justify font-RubikRegular my-3 selection:bg-[#c3c8ce]">
+            <p className="text-[13px] antialiased text-justify SpaceGroteskRegular my-3 selection:bg-[#c3c8ce]">
               Avan is a dedicated to continuous hard skill and soft skill learner. As a student, he's constantly seeking new challenges and opportunities to expand his skill set. In addition to his technical expertise, he also started exploring soft skill like learn english language, how to communicate effectively to gain a well-rounded readiness level of real word job. This commitment to learning ensures that he's well-equipped to adapt to the evolving job landscape.
             </p>
           </div>
           {/* contact */}
           <div className="w-full mt-5 text-[#1E2022]">
-            <h2 className="font-bold text-base my-2 selection:bg-[#c3c8ce]">Reach Me</h2>
+            <h2 className="SpaceGroteskBold text-base my-2 selection:bg-[#c3c8ce]">Reach Me</h2>
             <ContactForm />
           </div>
         </div>
