@@ -11,7 +11,7 @@ export const projectsData = [
     {
       id: 2,
       title: "Cry Cast",
-      shortdesc: "Project 2 description",
+      shortdesc: "Cry Cast is a cryptocurrency prediction platform that uses machine learning to predict the price of cryptocurrency.",
       image: "/assets/crycast.png",
       gitUrl: "/",
       previewUrl: "https://crycast.000webhostapp.com/",
@@ -20,7 +20,7 @@ export const projectsData = [
     {
       id: 3,
       title: "PromptWorld",
-      shortdesc: "Project 3 description",
+      shortdesc: "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic",
       image: "/assets/promptworld.png",
       gitUrl: "/",
       previewUrl: "https://promptworld-danis.vercel.app/",
@@ -29,8 +29,8 @@ export const projectsData = [
     {
       id: 4,
       title: "SchEducation",
-      shortdesc: "Project 4 description",
-      image: "/assets/scheducation2.png",
+      shortdesc: "Final Project of Innovation Management Lecture. SchEducation is simply an school online course, all of material provided by the Teacher there.",
+      image: "/assets/scheducation.png",
       gitUrl: "/",
       previewUrl: "https://sch-education.vercel.app/",
       createdAt: "July 22 2023"
