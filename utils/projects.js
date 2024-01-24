@@ -39,7 +39,7 @@ export const projectsData = [
       id: 5,
       title: "Personal Blog",
       shortdesc: "Static blog using supabase as view counter",
-      image: "/assets/5.png",
+      image: "/assets/blog.png",
       gitUrl: "/",
       previewUrl: "/",
       createdAt: "July 22 2023"
@@ -48,7 +48,7 @@ export const projectsData = [
       id: 6,
       title: "Diabetes Prediction",
       shortdesc: "Envolving Machine Learning Algorithms which is Random Forest Classifier",
-      image: "/assets/5.png",
+      image: "/assets/diacare.png",
       gitUrl: "/",
       previewUrl: "/",
       createdAt: "July 22 2023"

@@ -44,9 +44,12 @@ function Homepage() {
             <h1 className=" text-2xl SpaceGroteskBold capitalize selection:bg-[#ccccc0] text-[#34373b]">
               Recent Works
             </h1>
+            <h1 className=" text-sm my-3 SpaceGroteskMedium capitalize selection:bg-[#ccccc0] text-[#34373b]">
+              Here are a few projects I've worked on recently.
+            </h1>
           </div>
 
-          <div className="border border-neutral-400 my-4" />
+          {/* <div className="border border-neutral-400 my-4" /> */}
 
           <div className="rounded-xl w-full p-2 grid grid-cols-2 gap-y-3">
             {projectsData.map((project, idx) => (
@@ -66,15 +69,15 @@ function Homepage() {
                 }}>
                 <div className="relative">
                   <Image
-                    width={475}
-                    height={275}
-                    className={`w-[400px] mx-auto h-[225px] bg-cover rounded-lg select-none transition-opacity duration-200 ease-in ${isHovered[idx] ? "opacity-10" : "opacity-100"}`}
+                    width={400}
+                    height={235}
+                    className={`w-[400px] mx-auto h-[235px] bg-cover rounded-lg select-none transition-opacity duration-200 ease-in ${isHovered[idx] ? "opacity-10" : "opacity-100"}`}
                     src={project.image}
                     alt={project.title}
                   />
                   {/* <div className="absolute top-0 opacity-0 hover:opacity-100 px-8 py-7 duration-200 transition-all ease-in"></div> */}
                   <div
-                    className={`absolute top-0 left-0 w-[400px] h-[225px] px-8 py-7 flex flex-col justify-between items-center duration-200 transition-all ease-in ${isHovered[idx] ? "opacity-100" : "opacity-0"}`}
+                    className={`absolute top-0 left-[10%] px-5 py-5 w-[400px] h-[235px] flex flex-col justify-between duration-200 transition-all ease-in ${isHovered[idx] ? "opacity-100" : "opacity-0"}`}
                     onMouseEnter={() => {
                       // When the mouse enters, set the boolean at index idx to true
                       setIsHovered(prev => {
@@ -92,10 +95,10 @@ function Homepage() {
                       });
                     }}
                   >
-                    <h1 className="text-xl font-bold text-left select-none">{project.title}</h1>
-                    <p className="text-[13px] font-bold text-[#6d6c6c] text-left select-none">{project.shortdesc}</p>
+                    <h1 className="text-xl font-bold text-left mx-auto select-none">{project.title}</h1>
+                    <p className="text-[13px] font-bold text-[#6d6c6c] mx-auto text-left select-none">{project.shortdesc}</p>
                     {/* <Button asChild className=""> */}
-                    <Link href="/dashboard/all-project" className="flex gap-x-1 w-fit h-[40px] font-bold text-[#34373b] text-[13px] items-center select-none p-2 rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
+                    <Link href="/dashboard/all-project" className="flex mx-auto gap-x-1 w-fit h-[40px] font-bold text-[#34373b] text-[13px] items-center select-none p-2 rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
                       Open Project <div className="mt-[1px]"><FaArrowRight /></div>
                     </Link>
                     {/* </Button> */}
@@ -104,7 +107,7 @@ function Homepage() {
               </motion.div>
             ))}
           </div>
-          <div className="flex w-full justify-center mt-2 mb-5">
+          <div className="flex w-full justify-center my-4">
             <Link href="/dashboard/all-project" className="flex gap-x-1 w-fit px-8 py-4 h-[40px] font-bold text-[#34373b] text-[16px] items-center select-none rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
               See More <div className="mt-[1px]"><FaArrowRight /></div>
             </Link>

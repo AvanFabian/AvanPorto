@@ -15,26 +15,25 @@ function page() {
             alt=""
           />
         </div>
-        <h1 className="font-RubikExtraBold text-6xl text-center   my-9 btn-shine">
-          JoScript Portfolio
+        <h1 className="SpaceGroteskBold text-6xl text-center my-5 btn-shine">
+          Avan Fabian
         </h1>
 
-        <p className="text-neutral-400 lg:max-w-lg text-center font-RubikRegular ">
-          All features are done and coded by Joscript, please use this template
-          with free mind, remember to subscribe and share our videos
+        <p className="text-neutral-400 lg:max-w-lg text-center SpaceGroteskBold ">
+          Website Development, App Development Learner, Data Science & ML/AI Enthusiast
         </p>
       </div>
 
       <div className=" flex justify-center">
-        <div className="fixed bottom-7 flex border border-neutral-600 rounded-lg p-2 gap-x-5 text-neutral-500">
-          <Link href={"/dashboard"}>
+        <div className="fixed bottom-7 w-fit hover:bg-[#282828] duration-200 transition-all ease-in hover:text-[#f2f2f2] flex border border-neutral-600 rounded-2xl p-4 gap-x-5 text-[#282828]">
+          <Link href={"/dashboard"} className="flex flex-row gap-2 ">
             <span>
               <PiHouseLight className="text-2xl" />
             </span>
+            <span>
+              Enter Main Page
+            </span>
           </Link>
-          <span>
-            <PiGithubLogoLight className="text-2xl" />
-          </span>
         </div>
       </div>
     </>
