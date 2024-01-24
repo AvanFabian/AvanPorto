@@ -36,25 +36,23 @@ function Homepage() {
       }}
       className="w-full"
     >
-      <div className=" bg-[#1C1C1C] lg:bg-transparent rounded-2xl ">
+      <div className="flex flex-col gap-4 bg-[#1C1C1C] lg:bg-transparent rounded-2xl ">
 
-        <div id="firstsection">
+        <div id="firstsection " className="bg-[#f5f5e9] rounded-2xl p-2 border border-neutral-400">
           <div className="flex flex-col mb-1 text-center">
             {/* <PiCodeThin className="text-6xl text-neutral-50" /> */}
-            <h1 className=" text-2xl font-bold uppercase selection:bg-[#c3c8ce] text-[#34373b]">
-              My Recent Works
+            <h1 className=" text-2xl font-bold capitalize selection:bg-[#ccccc0] text-[#34373b]">
+              Recent Works
             </h1>
           </div>
 
-          
-
         </div>
 
-        <div id="secondsection">
+        <div id="secondsection" className="bg-[#f5f5e9] rounded-2xl p-2 border border-neutral-400">
           <div className="flex flex-col mb-1 text-center">
             {/* <PiCodeThin className="text-6xl text-neutral-50" /> */}
-            <h1 className=" text-2xl font-bold uppercase selection:bg-[#c3c8ce] text-[#34373b]">
-              My Recent Works
+            <h1 className=" text-2xl font-bold capitalize selection:bg-[#ccccc0] text-[#34373b]">
+              Recent Works
             </h1>
           </div>
 
@@ -80,7 +78,7 @@ function Homepage() {
                   <Image
                     width={475}
                     height={275}
-                    className={`w-[400px] h-[225px] bg-cover rounded-lg select-none transition-opacity duration-200 ease-in ${isHovered[idx] ? "opacity-10" : "opacity-100"}`}
+                    className={`w-[400px] mx-auto h-[225px] bg-cover rounded-lg select-none transition-opacity duration-200 ease-in ${isHovered[idx] ? "opacity-10" : "opacity-100"}`}
                     src={project.image}
                     alt={project.title}
                   />
@@ -122,44 +120,22 @@ function Homepage() {
             </Link>
           </div>
         </div>
-        <div className="flex py-4">
-          {/* <PiCodeThin className="text-6xl text-neutral-50" /> */}
-          <h1 className=" text-2xl font-bold uppercase text-[#34373b] selection:bg-[#c3c8ce]">
-            Recent Projects
-          </h1>
-        </div>
 
-        <div className="border border-neutral-400 mb-5" />
-
-        <div className="mt-6  bg-[#1C1C1C] rounded-lg text-neutral-400">
-          <div className="duration-200 transition-all ease-in p-4">
-            <div className="  flex items-center gap-x-3">
-              <div>
-                <span className="text-sm">July 22, 2023</span>
-                <h2 className="text-sm font-RubikMedium">
-                  Smooth Animation with React and Framer Motion
-                </h2>
-              </div>
+        <div id="thirdsection " className="bg-[#f5f5e9] rounded-2xl flex flex-col gap-3 p-2 border border-neutral-400">
+          <div className="w-full flex flex-row">
+            <div className="w-full flex flex-col gap-3">
+              as
+            </div>
+            <div className="w-full flex flex-col gap-3">
+              as
             </div>
           </div>
-          <div className="duration-200 transition-all ease-in p-4">
-            <div className="  flex items-center gap-x-3">
-              <div>
-                <span className="text-sm">July 22, 2023</span>
-                <h2 className="text-sm font-RubikMedium">
-                  Smooth Animation with React and Framer Motion
-                </h2>
-              </div>
+          <div className="w-full flex flex-row">
+            <div className="w-full flex flex-col gap-3">
+              as
             </div>
-          </div>
-          <div className="duration-200 transition-all ease-in p-4">
-            <div className="flex items-center gap-x-3">
-              <div>
-                <span className="text-sm">July 22, 2023</span>
-                <h2 className="text-sm font-RubikMedium">
-                  Smooth Animation with React and Framer Motion
-                </h2>
-              </div>
+            <div className="w-full flex flex-col gap-3">
+              as
             </div>
           </div>
         </div>
