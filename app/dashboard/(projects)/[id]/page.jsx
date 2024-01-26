@@ -5,6 +5,7 @@ import React from "react";
 import { PiArrowLeftThin } from "react-icons/pi";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
+// import { FaArrowLeft } from "react-icons/fa";
 
 function page() {
   return (
@@ -23,27 +24,24 @@ function page() {
       }}
     >
       <div className="sticky top-5 ">
-        <div className=" ">
+        {/* <div className=" "> */}
           <div className="-mt-6   ">
-            <div className="bg-neutral-700/25 backdrop-blur-md h-10  w-full rounded-xl flex items-center gap-x-7 ">
+            <div className="bg-neutral-700/25 backdrop-blur-md h-10  w-full rounded-xl flex items-center gap-x-3 ">
               <Link href={"/dashboard"}>
-                <div className="bg-neutral-700/50 h-8 w-8 rounded-full flex items-center justify-center ml-3">
-                  <div className="bg-neutral-300 rounded-full h-5 w-5 flex items-center justify-center">
-                    <PiArrowLeftThin className="text-black text-lg" />
+                <div className="bg-[#1E2022] h-8 w-8 rounded-full flex items-center justify-center ml-3">
+                  <div className="rounded-full h-5 w-5 flex items-center justify-center">
+                    <PiArrowLeftThin className="text-[#f2f2f2] text-lg" />
                   </div>
                 </div>
               </Link>
-
-              <Link href={"/dashboard"}>
-                <button className="text-xs bg-neutral-700/25 p-1 w-16 h-6 rounded-md">
-                  Home
-                </button>
-              </Link>
+                <h1 className="SpaceGroteskMedium text-lg text-[#1E2022] select-none">
+                  Back
+                </h1>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
-      <div className="  mt-9 w-full p-5 border border-neutral-700   rounded-2xl h-full bg-[#1C1C1C] ">
+      <div className="mt-9 w-full p-5 border border-neutral-700 rounded-2xl h-full bg-[#1C1C1C] ">
         <motion.h1
           initial={{ x: 100, opacity: 0, filter: "blur(4px)" }}
           animate={{

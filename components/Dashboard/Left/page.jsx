@@ -62,7 +62,7 @@ function Leftpage() {
             stiffness: 200,
           },
         }}
-        className=" hidden md:block rounded-2xl w-full md:w-80 sticky h-fit top-5 "
+        className=" hidden md:block rounded-2xl w-full md:w-80 sticky h-fit top-0"
       >
 
         <div className=" md:w-80 w-full p-3 border border-neutral-400 rounded-2xl h-fit bg-[#f5f5e9]">
@@ -72,8 +72,8 @@ function Leftpage() {
               <Image
                 width={1000}
                 height={1000}
-                className="w-28 h-28 rounded-full object-cover"
-                src="/black.jpeg"
+                className="w-28 h-28 rounded-full object-cover grayscale duration-200 transition-all ease-in hover:grayscale-0"
+                src="/Foto-3x4.jpg"
                 alt="Avan Fabian"
               />
               <h1 className="SpaceGroteskMedium text-xl text-[#1E2022] mt-3 selection:bg-[#c3c8ce]">

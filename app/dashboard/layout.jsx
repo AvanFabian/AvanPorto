@@ -7,8 +7,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-[#F0F5F9]">
-          <div className="max-w-[78rem] mx-2">
-            <div className=" gap-4 flex md:mt-5 flex-col md:flex-row  ">
+          <div className="max-w-[78rem] md:mx-3 md:my-3 ">
+            <div className=" gap-4 flex flex-col md:flex-row  ">
               <Left />
               {children}
               {/* <Right /> */}
