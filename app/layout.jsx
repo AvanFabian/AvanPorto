@@ -4,7 +4,7 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
       <html lang="en" suppressHydrationWarning>
-        <body className="bg-[#fffff3]">
+        <body className="bg-[#F5EFE7]">
             {/* <Dashboard /> */}
             {children}
         </body>

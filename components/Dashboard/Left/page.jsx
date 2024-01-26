@@ -65,7 +65,7 @@ function Leftpage() {
         className=" hidden md:block rounded-2xl w-full md:w-80 sticky h-fit top-0"
       >
 
-        <div className=" md:w-80 w-full p-3 border border-neutral-400 rounded-2xl h-fit bg-[#f5f5e9]">
+        <div className=" md:w-80 w-full p-3 border border-neutral-400 rounded-2xl h-fit bg-[#ebe5dd]">
           <div className="flex">
             <div
               className="w-full relative basis-4/6">

@@ -40,7 +40,7 @@ function Homepage() {
     >
       <div className="flex flex-col gap-4 bg-[#1C1C1C] lg:bg-transparent rounded-2xl ">
 
-        <div id="firstsection" className="bg-[#f5f5e9] rounded-2xl p-2 border border-neutral-400">
+        <div id="firstsection" className="bg-[#ebe5dd] rounded-2xl p-2 border border-neutral-400">
           <div className="flex flex-col mb-1 text-center">
             {/* <PiCodeThin className="text-6xl text-neutral-50" /> */}
             <h1 className=" text-2xl SpaceGroteskBold capitalize selection:bg-[#ccccc0] text-[#34373b]">
@@ -118,7 +118,7 @@ function Homepage() {
           </div>
         </div>
 
-        <div id="secondsection " className="bg-[#f5f5e9] rounded-2xl p-2 border border-neutral-400">
+        <div id="secondsection " className="bg-[#ebe5dd] rounded-2xl p-2 border border-neutral-400">
           <div className="flex flex-col mb-1 text-center">
             {/* <PiCodeThin className="text-6xl text-neutral-50" /> */}
             <h1 className="text-2xl SpaceGroteskBold capitalize selection:bg-[#ccccc0] text-[#34373b]">
@@ -128,7 +128,7 @@ function Homepage() {
               Some short overview of what I can do.
             </h1>
           </div>
-          <div className="bg-[#f5f5e9] rounded-2xl flex flex-col gap-3">
+          <div className="rounded-2xl flex flex-col gap-3">
             <div className="w-full flex flex-row">
               <motion.div
                 className="flex flex-col"
