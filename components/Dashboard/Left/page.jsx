@@ -72,7 +72,7 @@ function Leftpage() {
               <Image
                 width={1000}
                 height={1000}
-                className="w-28 h-28 rounded-full object-cover grayscale duration-200 transition-all ease-in hover:grayscale-0"
+                className="w-28 h-28 rounded-full object-cover duration-200 transition-all ease-in "
                 src="/Foto-3x4.jpg"
                 alt="Avan Fabian"
               />

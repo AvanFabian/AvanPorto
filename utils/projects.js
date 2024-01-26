@@ -2,11 +2,12 @@ export const projectsData = [
     {
       id: 1,
       title: "First Portfolio Website",
-      shortdesc: "Very first portfolio website using ReactJS",
+      shortdesc: "First portfolio and also website using ReactJS",
       image: "/assets/firstporto.png",
       gitUrl: "/",
       previewUrl: "https://avanfabian.vercel.app/",
-      createdAt: "July 22 2023"
+      createdAt: "2023",
+      TechStack: "ReactJS, TailwindCSS"
     },
     {
       id: 2,
@@ -15,7 +16,8 @@ export const projectsData = [
       image: "/assets/crycast.png",
       gitUrl: "/",
       previewUrl: "https://crycast.000webhostapp.com/",
-      createdAt: "July 22 2023"
+      createdAt: "2023",
+      TechStack: "Laravel, MySQL, Bootstrap, Vanilla JS"
     },
     {
       id: 3,
@@ -24,7 +26,8 @@ export const projectsData = [
       image: "/assets/promptworld.png",
       gitUrl: "/",
       previewUrl: "https://promptworld-danis.vercel.app/",
-      createdAt: "July 22 2023"
+      createdAt: "2023",
+      TechStack: "NextJS, TailwindCSS, MongoDB"
     },
     {
       id: 4,
@@ -33,7 +36,8 @@ export const projectsData = [
       image: "/assets/scheducation.png",
       gitUrl: "/",
       previewUrl: "https://sch-education.vercel.app/",
-      createdAt: "July 22 2023"
+      createdAt: "2023",
+      TechStack: "NextJS, TailwindCSS, MongoDB"
     },
     {
       id: 5,
@@ -42,7 +46,8 @@ export const projectsData = [
       image: "/assets/blog.png",
       gitUrl: "/",
       previewUrl: "/",
-      createdAt: "July 22 2023"
+      createdAt: "2023",
+      TechStack: "NextJS, TailwindCSS, Supabase, ContentLayer"
     },
     {
       id: 6,
@@ -51,36 +56,37 @@ export const projectsData = [
       image: "/assets/diacare.png",
       gitUrl: "/",
       previewUrl: "/",
-      createdAt: "July 22 2023"
+      createdAt: "2023",
+      TechStack: "Laravel, MySQL, Scikit-Learn, Python"
     },
   ];
 
-export const projectsDataPreview = [
-    {
-      id: 1,
-      title: "First Portfolio Website",
-      shortdesc: "My first portfolio website builded using ReactJS",
-      image: "/assets/firstporto.png",
-      gitUrl: "/",
-      previewUrl: "https://avanfabian.vercel.app/",
-      createdAt: "July 22 2023"
-    },
-    {
-      id: 2,
-      title: "Cry Cast",
-      shortdesc: "Cry Cast is a cryptocurrency prediction platform that uses machine learning to predict the price of cryptocurrency. The website is builded using native Javascript, Bootstrap, Laravel and MySQL as the database and deployed on 000webhost. This project is major assignment in my Web Programming lecture.",
-      image: "/assets/crycast.png",
-      gitUrl: "/",
-      previewUrl: "https://crycast.000webhostapp.com/",
-      createdAt: "July 22 2023"
-    },
-    {
-      id: 3,
-      title: "PromptWorld",
-      shortdesc: "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic. The website is builded using NextJS, TailwindCSS, and MongoDB as the database.",
-      image: "/assets/promptworld.png",
-      gitUrl: "/",
-      previewUrl: "https://promptworld-danis.vercel.app/",
-      createdAt: "July 22 2023"
-    },
-  ];
+// export const projectsDataPreview = [
+//     {
+//       id: 1,
+//       title: "First Portfolio Website",
+//       shortdesc: "My first portfolio website builded using ReactJS",
+//       image: "/assets/firstporto.png",
+//       gitUrl: "/",
+//       previewUrl: "https://avanfabian.vercel.app/",
+//       createdAt: "2023"
+//     },
+//     {
+//       id: 2,
+//       title: "Cry Cast",
+//       shortdesc: "Cry Cast is a cryptocurrency prediction platform that uses machine learning to predict the price of cryptocurrency. The website is builded using native Javascript, Bootstrap, Laravel and MySQL as the database and deployed on 000webhost. This project is major assignment in my Web Programming lecture.",
+//       image: "/assets/crycast.png",
+//       gitUrl: "/",
+//       previewUrl: "https://crycast.000webhostapp.com/",
+//       createdAt: "2023"
+//     },
+//     {
+//       id: 3,
+//       title: "PromptWorld",
+//       shortdesc: "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic. The website is builded using NextJS, TailwindCSS, and MongoDB as the database.",
+//       image: "/assets/promptworld.png",
+//       gitUrl: "/",
+//       previewUrl: "https://promptworld-danis.vercel.app/",
+//       createdAt: "2023"
+//     },
+//   ];

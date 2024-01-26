@@ -1,28 +1,20 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { projectsData } from "@/utils/projects";
-import { projectsDataPreview } from "@/utils/projects";
-import { Button } from "@/components/ui/button"
+// import { Button } from "@/components/ui/button"
 import { FaArrowRight } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaRobot } from "react-icons/fa";
-import { Input } from "@/components/ui/input"
-
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+// import { Input } from "@/components/ui/input"
 import { useInView } from 'react-intersection-observer';
-
+import Card from "./Card";
 
 function Homepage() {
   // const [isHovered, setIsHovered] = React.useState(false);
-  const [isHovered, setIsHovered] = useState(new Array(projectsDataPreview.length).fill(false));
+  // const [isHovered, setIsHovered] = useState(new Array(projectsData.length).fill(false));
 
   const [ref, inView] = useInView({
     triggerOnce: false, // Change to false if you want the animation to trigger again whenever it comes into view
@@ -80,7 +72,8 @@ function Homepage() {
                   opacity: 0,
                 }}
               >
-                <div className="relative">
+                <Card project={project} idx={idx}/>
+                {/* <div className="relative">
                   <Image
                     width={400}
                     height={235}
@@ -88,7 +81,7 @@ function Homepage() {
                     src={project.image}
                     alt={project.title}
                   />
-                  {/* <div className="absolute top-0 opacity-0 hover:opacity-100 px-8 py-7 duration-200 transition-all ease-in"></div> */}
+                  
                   <div
                     className={`absolute top-0 left-[10%] px-5 py-5 w-[400px] h-[235px] flex flex-col justify-between duration-200 transition-all ease-in ${isHovered[idx] ? "opacity-100" : "opacity-0"}`}
                     onMouseEnter={() => {
@@ -110,18 +103,16 @@ function Homepage() {
                   >
                     <h1 className="text-xl font-bold text-left mx-auto select-none">{project.title}</h1>
                     <p className="text-[13px] font-bold text-[#6d6c6c] mx-auto text-left select-none">{project.shortdesc}</p>
-                    {/* <Button asChild className=""> */}
                     <Link href={`${project.previewUrl}`} target="_blank" className="flex mx-auto gap-x-1 w-fit h-[40px] font-bold text-[#34373b] text-[13px] items-center select-none p-2 rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
                       Open Project <div className="mt-[1px]"><FaArrowRight /></div>
                     </Link>
-                    {/* </Button> */}
                   </div>
-                </div>
+                </div> */}
               </motion.div>
             ))}
           </div>
           <div className="flex w-full justify-center my-4">
-            <Link href="/dashboard/all-project" className="flex gap-x-1 w-fit px-8 py-4 h-[40px] font-bold text-[#34373b] text-[16px] items-center select-none rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
+            <Link href="/dashboard/detail" className="flex gap-x-1 w-fit px-8 py-4 h-[40px] font-bold text-[#34373b] text-[16px] items-center select-none rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
               See More <div className="mt-[1px]"><FaArrowRight /></div>
             </Link>
           </div>
