@@ -9,6 +9,7 @@ import Image from "next/image";
 import { projectsData, projectsDataScience } from "@/utils/projects";
 import { useInView } from 'react-intersection-observer';
 import Card from "@/components/Dashboard/HomePage/Card";
+import CardMobile from "@/components/Dashboard/HomePage/CardMobile";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 
@@ -33,7 +34,7 @@ function page() {
       }}
     >
       <div className="sticky top-0 z-50">
-        <div className="bg-[#282828] opacity-80 backdrop-blur-md h-10 w-fit rounded-xl flex items-center gap-x-3 ">
+        <div className="bg-[#282828]  opacity-80 backdrop-blur-md h-10 w-full lg:rounded-xl flex items-center gap-x-3 ">
           <Link href={"/dashboard"} className="flex flex-row justify-center">
             <div className="h-8 w-8 rounded-full flex items-center justify-center">
               {/* <div className="rounded-full h-5 w-5 flex items-center justify-center"> */}
@@ -55,7 +56,7 @@ function page() {
             <TabsTrigger value="DataScience" className="px-6 py-2 rounded-xl bg-[#282828] text-[#E1E4E6]">Data Science</TabsTrigger>
           </TabsList>
           <TabsContent value="All">
-            <div className="rounded-xl w-full p-2 grid grid-cols-2 gap-y-3">
+            <div className="rounded-xl w-full p-2 flex flex-col lg:grid lg:grid-cols-2 gap-y-3">
               {projectsData.map((project, idx) => (
                 <motion.div
                   // ref={ref}
@@ -80,7 +81,7 @@ function page() {
 
           </TabsContent>
           <TabsContent value="Website">
-            <div className="rounded-xl w-full p-2 grid grid-cols-2 gap-y-3">
+            <div className="rounded-xl w-full p-2 flex flex-col lg:grid lg:grid-cols-2 gap-y-3">
               {projectsData.map((project, idx) => (
                 <motion.div
                   // ref={ref}
@@ -104,7 +105,7 @@ function page() {
             </div>
           </TabsContent>
           <TabsContent value="DataScience">
-            <div className="rounded-xl w-full p-2 grid grid-cols-2 gap-y-3">
+            <div className="rounded-xl w-full p-2 flex flex-col lg:grid lg:grid-cols-2 gap-y-3">
               {projectsDataScience.map((project, idx) => (
                 <motion.div
                   // ref={ref}
@@ -122,7 +123,7 @@ function page() {
                     },
                   }}
                 >
-                  <Card project={project} idx={idx} isHovered={isHovered2} setIsHovered={setIsHovered2} />
+                  <CardMobile project={project} idx={idx} isHovered={isHovered2} setIsHovered={setIsHovered2} />
                 </motion.div>
               ))}
             </div>

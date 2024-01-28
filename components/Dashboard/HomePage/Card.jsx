@@ -20,7 +20,7 @@ const Card = ({ project, idx, isHovered, setIsHovered }) => {
         />
         {/* <div className="absolute top-0 opacity-0 hover:opacity-100 px-8 py-7 duration-200 transition-all ease-in"></div> */}
         <div
-          className={`absolute top-0 left-0 px-7 py-5 w-[400px] h-[235px] flex flex-col justify-between duration-200 transition-all ease-in ${isHovered[idx] ? "opacity-100" : "opacity-0"}`}
+          className={`hidden lg:flex absolute top-0 left-0 px-7 py-5 w-[400px] h-[235px] flex-col justify-between duration-200 transition-all ease-in ${isHovered[idx] ? "opacity-100" : "opacity-0"}`}
           onMouseEnter={() => {
             // When the mouse enters, set the boolean at index idx to true
             setIsHovered(prev => {

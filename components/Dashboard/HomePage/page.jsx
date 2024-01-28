@@ -12,6 +12,7 @@ import { FaRobot } from "react-icons/fa";
 // import { Input } from "@/components/ui/input"
 import { useInView } from 'react-intersection-observer';
 import Card from "./Card";
+import CardBg from "@/utils/cardbg";
 
 function Homepage() {
   // const [isHovered, setIsHovered] = React.useState(false);
