@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { projectsData } from "@/utils/projects";

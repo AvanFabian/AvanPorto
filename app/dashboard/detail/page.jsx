@@ -6,7 +6,7 @@ import { useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
-import { projectsData } from "@/utils/projects";
+import { projectsData, projectsDataScience } from "@/utils/projects";
 import { useInView } from 'react-intersection-observer';
 import Card from "@/components/Dashboard/HomePage/Card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -14,18 +14,20 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 function page() {
   const [isHovered, setIsHovered] = useState(new Array(projectsData.length).fill(false));
+  const [isHovered2, setIsHovered2] = useState(new Array(projectsDataScience.length).fill(false));
 
   return (
     <motion.div
       className="w-full"
-      initial={{ y: 100, opacity: 0 }}
+      initial={{ y: 300, opacity: 0 }}
+      transition={{ duration: 0.9 }}
       animate={{
         y: 0,
         opacity: 1,
         transition: {
-          duration: 0.8,
-          // delay: 0.9,
-          type: "spring",
+          duration: 0.9,
+          // delay: 0.7,
+          type: "Tween",
           stiffness: 200,
         },
       }}
@@ -103,7 +105,7 @@ function page() {
           </TabsContent>
           <TabsContent value="DataScience">
             <div className="rounded-xl w-full p-2 grid grid-cols-2 gap-y-3">
-              {projectsData.map((project, idx) => (
+              {projectsDataScience.map((project, idx) => (
                 <motion.div
                   // ref={ref}
                   key={project.title}
@@ -120,7 +122,7 @@ function page() {
                     },
                   }}
                 >
-                  <Card project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered} />
+                  <Card project={project} idx={idx} isHovered={isHovered2} setIsHovered={setIsHovered2} />
                 </motion.div>
               ))}
             </div>
