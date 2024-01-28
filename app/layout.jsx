@@ -1,5 +1,7 @@
 import "./globals.css";
-// import Dashboard from "@/app/dashboard/layout";
+
+// metadata
+
 
 export default function RootLayout({ children }) {
   return (

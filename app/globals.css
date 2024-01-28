@@ -88,3 +88,9 @@
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(57, 7, 2, 0.8);
 }
+
+.activebgtabs[data-state='active'] {
+  background-color: #bfb3a4 !important;
+  /* weigjt */
+  font-weight: 700 !important;
+}

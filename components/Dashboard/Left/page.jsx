@@ -1,13 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import {
-  PiBookOpenTextLight,
-  PiGoogleLogoThin,
-  PiTwitterLogoLight,
-  PiMagicWandThin,
-  PiShapesThin,
-  PiHouseLight,
-} from "react-icons/pi";
+import CardBg from "@/utils/cardbg";
 
 import ContactForm from "@/components/dashboard/Left/ContactForm"
 

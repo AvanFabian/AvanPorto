@@ -39,15 +39,11 @@ const Card = ({ project, idx, isHovered, setIsHovered }) => {
           }}
         >
           <h1 className="text-xl font-bold text-left mx-auto select-none">{project.title}</h1>
-          {/* <div className="w-[90%] mx-auto"> */}
-            <p className="text-[13px] font-bold text-[#6d6c6c] mx-auto text-left select-none">{project.shortdesc}</p>
+          <p className="text-[13px] font-bold text-[#6d6c6c] mx-auto text-left select-none">{project.shortdesc}</p>
 
-          {/* </div> */}
-          {/* <Button asChild className=""> */}
           <Link href={`${project.previewUrl}`} target="_blank" className="flex mx-auto gap-x-1 w-fit h-[40px] font-bold text-[#34373b] text-[13px] items-center select-none p-2 rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
             Open Project <div className="mt-[1px]"><FaArrowRight /></div>
           </Link>
-          {/* </Button> */}
         </div>
       </div>
     </>
