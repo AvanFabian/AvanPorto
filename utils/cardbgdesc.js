@@ -1,4 +1,4 @@
-const cardbgborder = "w-full flex justify-between bg-[#ebe5dd] p-2 border border-neutral-400 -translate-x-3 z-10" 
+const cardbgborder = "w-full flex justify-between bg-[#ebe5dd] p-2 border border-neutral-400 z-10" 
 
 export default function CardBgDesc({children}) {
     return (

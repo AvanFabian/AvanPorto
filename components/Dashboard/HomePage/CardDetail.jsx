@@ -1,9 +1,5 @@
 'use client'
-import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
-import CardBg from "@/utils/cardbgdesc";
 import { textdesc, subHeader, header, transition} from "@/utils/textstyle";
 import CardBgDesc from "@/utils/cardbgdesc";
 

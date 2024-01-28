@@ -32,7 +32,7 @@ function page() {
     >
       <div className="sticky top-0 z-50">
         <div className="bg-[#282828]  opacity-80 backdrop-blur-md h-10 w-full lg:w-fit lg:rounded-xl flex items-center gap-x-3 ">
-          <Link href={"/dashboard"} className="flex flex-row justify-center">
+          <Link href={"/"} className="flex flex-row justify-center">
             <div className="h-8 w-8 rounded-full flex items-center justify-center">
               {/* <div className="rounded-full h-5 w-5 flex items-center justify-center"> */}
               <FaArrowLeft className="text-[#E1E4E6] text-lg" />
@@ -152,7 +152,7 @@ function page() {
         </Tabs>
       </div>
       <div className="flex w-full justify-center my-4">
-        <Link href="/dashboard/archive" className="flex gap-x-1 w-fit px-8 py-4 h-[40px] font-bold text-[#34373b] text-[16px] items-center select-none rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
+        <Link href="/archive" className="flex gap-x-1 w-fit px-8 py-4 h-[40px] font-bold text-[#34373b] text-[16px] items-center select-none rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
           View in Archive <div className="mt-[1px]"><FaArrowRight /></div>
         </Link>
       </div>

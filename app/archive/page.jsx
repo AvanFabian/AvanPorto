@@ -29,7 +29,7 @@ function page() {
     >
       <div className="sticky top-0 z-50 mb-10">
         <div className="bg-[#282828]  opacity-80 backdrop-blur-md h-10 w-full lg:w-fit lg:rounded-xl flex items-center gap-x-3 ">
-          <Link href={"/dashboard/detail"} className="flex flex-row justify-center">
+          <Link href={"/detail"} className="flex flex-row justify-center">
             <div className="h-8 w-8 rounded-full flex items-center justify-center">
               {/* <div className="rounded-full h-5 w-5 flex items-center justify-center"> */}
               <FaArrowLeft className="text-[#E1E4E6] text-lg" />

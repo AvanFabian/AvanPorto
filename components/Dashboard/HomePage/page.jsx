@@ -77,7 +77,7 @@ function Homepage() {
               ))}
             </div>
             <div className="flex w-full justify-center my-4">
-              <Link href="/dashboard/detail" className="flex gap-x-1 w-fit px-8 py-4 h-[40px] font-bold text-[#34373b] text-[16px] items-center select-none rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
+              <Link href="/detail" className="flex gap-x-1 w-fit px-8 py-4 h-[40px] font-bold text-[#34373b] text-[16px] items-center select-none rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
                 See More <div className="mt-[1px]"><FaArrowRight /></div>
               </Link>
             </div>
