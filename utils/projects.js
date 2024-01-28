@@ -2,6 +2,7 @@ export const projectsData = [
   {
     id: 1,
     title: "First Portfolio Website",
+    shortdesc: "My first portfolio website",
     longdesc:
       "Explore my first portfolio and website, built using ReactJS, showcasing my projects and skills in web development.",
     image: "/assets/firstporto.png",
