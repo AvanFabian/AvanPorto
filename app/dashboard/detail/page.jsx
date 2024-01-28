@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import React from "react";
-import { useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { projectsData, projectsDataScience } from "@/utils/projects";

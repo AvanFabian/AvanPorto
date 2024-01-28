@@ -1,7 +1,7 @@
 'use client'
 import dynamic from "next/dynamic";
 // import Left from "@/components/dashboard/Left/page";
-const Left = dynamic(() => import("@/components/dashboard/Left/page"), {
+const Left = dynamic(() => import("@/components/Dashboard/Left/page"), {
   ssr: false,
 });
 

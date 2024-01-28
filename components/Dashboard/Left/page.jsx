@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import CardBg from "@/utils/cardbg";
 
-import ContactForm from "@/components/dashboard/Left/ContactForm"
+import ContactForm from "@/components/Dashboard/Left/ContactForm"
 
 import { motion, useAnimation } from "framer-motion";
 import Link from "next/link";

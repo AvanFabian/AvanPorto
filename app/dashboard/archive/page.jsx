@@ -2,13 +2,10 @@
 
 import Link from "next/link";
 import React from "react";
-import { useState } from "react";
+
 import { FaArrowLeft } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-import CardDetail from "@/components/Dashboard/HomePage/CardDetail";
-import CardDesc from "@/components/Dashboard/HomePage/CardMobile";
-import { FaArrowRight } from "react-icons/fa";
 import CardBg from "@/utils/cardbg";
 import { TableData } from "./TableData";
 
