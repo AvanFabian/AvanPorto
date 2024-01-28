@@ -5,8 +5,8 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { projectsData } from "@/utils/projects";
 
-const Card = ({ project, idx }) => {
-  const [isHovered, setIsHovered] = useState(new Array(projectsData.length).fill(false));
+const Card = ({ project, idx, isHovered, setIsHovered }) => {
+  // const [isHovered, setIsHovered] = useState(new Array(projectsData.length).fill(false));
 
   return (
     <>

@@ -14,7 +14,7 @@ import Card from "./Card";
 
 function Homepage() {
   // const [isHovered, setIsHovered] = React.useState(false);
-  // const [isHovered, setIsHovered] = useState(new Array(projectsData.length).fill(false));
+  const [isHovered, setIsHovered] = useState(new Array(projectsData.length).fill(false));
 
   const [ref, inView] = useInView({
     triggerOnce: false, // Change to false if you want the animation to trigger again whenever it comes into view
@@ -72,42 +72,7 @@ function Homepage() {
                   opacity: 0,
                 }}
               >
-                <Card project={project} idx={idx}/>
-                {/* <div className="relative">
-                  <Image
-                    width={400}
-                    height={235}
-                    className={`w-[400px] mx-auto h-[235px] bg-cover rounded-lg select-none transition-opacity duration-200 ease-in ${isHovered[idx] ? "opacity-10" : "opacity-100"}`}
-                    src={project.image}
-                    alt={project.title}
-                  />
-                  
-                  <div
-                    className={`absolute top-0 left-[10%] px-5 py-5 w-[400px] h-[235px] flex flex-col justify-between duration-200 transition-all ease-in ${isHovered[idx] ? "opacity-100" : "opacity-0"}`}
-                    onMouseEnter={() => {
-                      // When the mouse enters, set the boolean at index idx to true
-                      setIsHovered(prev => {
-                        const newIsHovered = [...prev];
-                        newIsHovered[idx] = true;
-                        return newIsHovered;
-                      });
-                    }}
-                    onMouseLeave={() => {
-                      // When the mouse leaves, set the boolean at index idx to false
-                      setIsHovered(prev => {
-                        const newIsHovered = [...prev];
-                        newIsHovered[idx] = false;
-                        return newIsHovered;
-                      });
-                    }}
-                  >
-                    <h1 className="text-xl font-bold text-left mx-auto select-none">{project.title}</h1>
-                    <p className="text-[13px] font-bold text-[#6d6c6c] mx-auto text-left select-none">{project.shortdesc}</p>
-                    <Link href={`${project.previewUrl}`} target="_blank" className="flex mx-auto gap-x-1 w-fit h-[40px] font-bold text-[#34373b] text-[13px] items-center select-none p-2 rounded-xl hover:bg-[#34373b] bg-transparent border-2 border-[#34373b] hover:text-[#f2f2f2] duration-200 transition-all ease-in">
-                      Open Project <div className="mt-[1px]"><FaArrowRight /></div>
-                    </Link>
-                  </div>
-                </div> */}
+                <Card project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered} />
               </motion.div>
             ))}
           </div>
