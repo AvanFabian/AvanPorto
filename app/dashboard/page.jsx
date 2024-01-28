@@ -1,7 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 // import HomePage from "@/components/dashboard/HomePage/page";
-const HomePage = dynamic(() => import("../../components/dashboard/HomePage/page"), {
+const HomePage = dynamic(() => import("@/components/dashboard/HomePage/page"), {
   ssr: false,
 });
 
