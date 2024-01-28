@@ -1,7 +1,9 @@
 'use client'
-
-// import Right from "@/components/dashboard/Right/page";
-import Left from "@/components/dashboard/Left/page";
+import dynamic from "next/dynamic";
+// import Left from "@/components/dashboard/Left/page";
+const Left = dynamic(() => import("../../components/dashboard/Left/page"), {
+  ssr: false,
+});
 
 export default function RootLayout({ children }) {
   return (
