@@ -83,14 +83,28 @@ const ContactForm = () => {
           required
           className="py-1 mt-5 w-full text-[16px] focus:outline-none bg-transparent border-b-[1px] border-neutral-400 caret-[#2d2e2f] placeholder:select-none placeholder:translate-y-[2px] placeholder:capitalize placeholder:text-[1E2022] placeholder:text-[16px]" />
         {/* <label className="flex flex-col self-start font-medium text-xs text-[#1E2022] select-none mt-2 mb-1">Message</label> */}
-        <input
+        {/* <input
           type="message"
           name="message"
           value={form.message}
           onChange={handleChange}
           placeholder="Write your message here"
           required
-          className="py-1 mt-5 w-full text-[16px] focus:outline-none bg-transparent border-b-[1px] border-neutral-400 caret-[#2d2e2f] placeholder:select-none placeholder:translate-y-[2px] placeholder:capitalize placeholder:text-[1E2022] placeholder:text-[16px]" />
+          className="py-1 mt-5 w-full text-[16px] focus:outline-none bg-transparent border-b-[1px] border-neutral-400 caret-[#2d2e2f] placeholder:select-none placeholder:translate-y-[2px] placeholder:capitalize placeholder:text-[1E2022] placeholder:text-[16px]" /> */}
+        <textarea
+          name="message"
+          rows={3}
+          cols={20}
+          value={form.message}
+          onChange={handleChange}
+          placeholder="Write your message here"
+          required
+          style={{ resize: 'none' }}
+          className="
+            py-1 mt-5 w-full text-[16px] focus:outline-none bg-transparent border-[1px] border-neutral-400 caret-[#2d2e2f] 
+            placeholder:absolute placeholder:select-none placeholder:translate-x-[4px] placeholder:translate-y-[1px] placeholder:capitalize 
+            placeholder:text-[1E2022] placeholder:text-[16px] " 
+          />
         <button type="submit" className="bg-[#282828] cursor-pointer h-7 py-1 mt-4 rounded-md text-xs w-[160px] font-RubikMedium text-[#E1E4E6]" >
           <span className="select-none">Send</span>
         </button>

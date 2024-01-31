@@ -6,6 +6,9 @@ import ContactForm from "@/components/Dashboard/Left/ContactForm"
 import { motion, useAnimation } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { FaWhatsappSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function Leftpage() {
   const [open, setOpen] = useState(false);
@@ -83,38 +86,16 @@ function Leftpage() {
                 className="bg-[#282828] SpaceGroteskRegular w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
                 Home
               </Link>
-              {/* ini */}
+
               <Link
                 href="https://www.facebook.com/"
                 target="_blank"
                 className="bg-[#282828] SpaceGroteskRegular w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
                 Blog
               </Link>
-              {/* <div>
-                <ModeToggle />
-              </div> */}
 
             </div>
           </div>
-
-          {/* <form
-            onSubmit={handleSubmit}
-            className="bg-[#282828] p-1  rounded-md md:flex items-center  justify-between h-9 w-full hidden "
-          >
-            <input
-              value={email}
-              onChange={handleChange}
-              className=" w-36 focus:outline-none bg-transparent text-neutral-400 text-xs placeholder:text-neutral-600 h-full pl-2 placeholder:text-xs placeholder:font-RubikMedium"
-              placeholder="name@email.com"
-              type="text"
-            />
-            <motion.button
-              animate={controls}
-              className="bg-[#696969] h-full p-1 rounded-md text-xs w-20 font-RubikMedium text-neutral-50"
-            >
-              Subscribe
-            </motion.button>
-          </form> */}
 
           {/* resume */}
           <div className="w-full mt-5 text-[#1E2022]">
@@ -130,6 +111,24 @@ function Leftpage() {
           <div className="w-full mt-5 text-[#1E2022]">
             <h2 className="SpaceGroteskBold text-base my-2 selection:bg-[#c3c8ce]">Reach Me</h2>
             <ContactForm />
+          </div>
+          <div className="w-full mt-5 text-[#1E2022]">
+            {/* <h2 className="SpaceGroteskBold text-base my-2 selection:bg-[#c3c8ce]">Social Media</h2> */}
+            <div className="w-full items-center flex flex-row gap-x-7">
+              <Link
+                href={`https://wa.me/081234566046?text=Hello, I would like to ask about your product.`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsappSquare className="w-[36px] h-[36px]" />
+              </Link>
+              <Link href="https://www.linkedin.com/in/avan-fabian-daniswara-4342b1254/" target="_blank">
+                <FaLinkedin className="w-[36px] h-[36px]" />
+              </Link>
+              <Link href="https://github.com/AvanFabian/" target="_blank">
+               <FaGithub className="w-[36px] h-[36px]" />
+              </Link>
+            </div>
           </div>
         </div>
       </motion.div>

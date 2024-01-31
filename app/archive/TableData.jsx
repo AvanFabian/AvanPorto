@@ -13,6 +13,7 @@ import { FaGithub } from "react-icons/fa";
 import { projectsData } from "@/utils/projects";
 import Link from "next/link";
 import { subHeader } from "@/utils/textstyle";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 export function TableData() {
   return (
@@ -37,9 +38,12 @@ export function TableData() {
               <TableCell>{project.title}</TableCell>
               <TableCell>{project.TechStack}</TableCell>
               <TableCell>{project.kind}</TableCell>
-              <TableCell className="text-right">
-                <Link href={project.gitUrl}>
+              <TableCell className="text-right items-end justify-end flex flex-row gap-x-1">
+                <Link href={project.gitUrl} target="_blank">
                   <FaGithub />
+                </Link>
+                <Link href={project.previewUrl} target="_blank">
+                  <FaArrowCircleRight />
                 </Link>
               </TableCell>
             </TableRow>

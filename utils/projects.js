@@ -11,6 +11,7 @@ export const projectsData = [
     createdAt: "2023",
     kind: "Website",
     TechStack: "ReactJS, TailwindCSS",
+    Status: "Completed",
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ export const projectsData = [
     createdAt: "2023",
     kind: "Data Science",
     TechStack: "Laravel, MySQL, Bootstrap, Vanilla JS",
+    Status: "Completed",
   },
   {
     id: 3,
@@ -32,13 +34,14 @@ export const projectsData = [
     shortdesc:
       "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic",
     longdesc:
-      "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic. PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic. PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic. PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic. PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic.",
+      "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic.",
     image: "/assets/promptworld.png",
     gitUrl: "https://github.com/AvanFabian/next-fs-gptsharing",
     previewUrl: "https://promptworld-danis.vercel.app/",
     createdAt: "2023",
     kind: "Website",
     TechStack: "NextJS, TailwindCSS, MongoDB",
+    Status: "Under Development",
   },
   {
     id: 4,
@@ -53,6 +56,7 @@ export const projectsData = [
     createdAt: "2023",
     kind: "Website",
     TechStack: "NextJS, TailwindCSS, MongoDB",
+    Status: "Under Development",
   },
   {
     id: 5,
@@ -66,6 +70,7 @@ export const projectsData = [
     createdAt: "2023",
     kind: "Website",
     TechStack: "NextJS, TailwindCSS, Supabase, ContentLayer",
+    Status: "Under Development",
   },
   {
     id: 6,
@@ -80,6 +85,7 @@ export const projectsData = [
     createdAt: "2023",
     kind: "Data Science",
     TechStack: "Laravel, MySQL, Scikit-Learn, Python",
+    Status: "Under Development",
   },
 ];
 
