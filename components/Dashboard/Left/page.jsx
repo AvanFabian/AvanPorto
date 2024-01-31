@@ -83,17 +83,22 @@ function Leftpage() {
             <div className="flex gap-x-2 basis-2/6 w-full h-fit">
               <Link
                 href="/"
-                className="bg-[#282828] SpaceGroteskRegular w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
+                className="bg-[#282828] SpaceGroteskRegular w-9 text-center select-none text-[#F0F5F9] rounded-md px-1 py-3 h-7 flex items-center justify-center text-[14px]">
                 Home
               </Link>
 
               <Link
                 href="https://www.facebook.com/"
                 target="_blank"
-                className="bg-[#282828] SpaceGroteskRegular w-11 text-center select-none text-[#F0F5F9] rounded-md px-2 py-3 h-7 flex items-center justify-center text-[14px] font-RubikBold">
+                className="bg-[#282828] SpaceGroteskRegular w-9 text-center select-none text-[#F0F5F9] rounded-md px-1 py-3 h-7 flex items-center justify-center text-[14px]">
                 Blog
               </Link>
-
+              <Link
+                href="/resume/Resume_Avan Fabian.pdf"
+                target="_blank"
+                className="bg-[#282828] SpaceGroteskRegular w-15 text-center select-none text-[#F0F5F9] rounded-md px-1 py-3 h-7 flex items-center justify-center text-[14px]">
+                Download CV
+              </Link>
             </div>
           </div>
 

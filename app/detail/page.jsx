@@ -6,11 +6,13 @@ import { FaArrowLeft } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { projectsData, projectsDataScience } from "@/utils/projects";
 import CardDetail from "@/components/Dashboard/HomePage/CardDetail";
-import CardDesc from "@/components/Dashboard/HomePage/CardMobile";
+import CardMobile from "@/components/Dashboard/HomePage/CardMobile";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { FaArrowRight } from "react-icons/fa";
 import { header } from "@/utils/textstyle";
 
+const desktop = "hidden lg:block my-8";
+const mobile = "lg:hidden";
 
 function page() {
 
@@ -46,16 +48,16 @@ function page() {
         </div>
       </div>
       {/* card */}
-      <div className="my-10 w-full flex flex-col">
-        <Tabs defaultValue="All" className="w-full gap-x-3 items-center justify-center">
-          <TabsList className="w-full items-center gap-x-2 mb-8 bg-[#F5EFE7]">
+      <div className="my-8 w-full flex flex-col">
+        <Tabs defaultValue="All" className="w-full gap-x-3 items-center justify-center ">
+          <TabsList className="w-full grid grid-cols-2 gap-y-2 lg:flex items-center gap-x-2 mb-4 bg-[#F5EFE7]">
             <TabsTrigger value="All" className="px-6 py-2 rounded-xl activebgtabs bg-[#282828] text-[#E1E4E6]">All</TabsTrigger>
             <TabsTrigger value="Website" className="px-6 py-2 rounded-xl activebgtabs bg-[#282828] text-[#E1E4E6]">Website</TabsTrigger>
             <TabsTrigger value="DataScience" className="px-6 py-2 rounded-xl activebgtabs bg-[#282828] text-[#E1E4E6]">Data Science</TabsTrigger>
             <TabsTrigger value="AnotherWorthy" className="px-6 py-2 rounded-xl activebgtabs bg-[#282828] text-[#E1E4E6]">Another Worthy</TabsTrigger>
           </TabsList>
           <TabsContent value="All">
-            <div className="rounded-xl w-full p-2 flex flex-col gap-y-12">
+            <div className="rounded-xl w-full p-2 flex flex-col">
               {projectsData.map((project, idx) => (
                 <motion.div
                   // ref={ref}
@@ -73,11 +75,11 @@ function page() {
                     },
                   }}
                 >
-                  <div className="hidden md:block">
+                  <div className={desktop}>
                     <CardDetail project={project} idx={idx} />
                   </div>
-                  <div className="md:hidden">
-                    <CardDesc project={project} idx={idx} />
+                  <div className={mobile}>
+                    <CardMobile project={project} idx={idx} />
                   </div>
                 </motion.div>
               ))}
@@ -85,7 +87,7 @@ function page() {
 
           </TabsContent>
           <TabsContent value="Website">
-            <div className="rounded-xl w-full p-2 flex flex-col gap-y-12">
+            <div className="rounded-xl w-full p-2 flex flex-col">
               {projectsData.map((project, idx) => (
                 <motion.div
                   // ref={ref}
@@ -103,18 +105,18 @@ function page() {
                     },
                   }}
                 >
-                  <div className="hidden md:block">
+                  <div className={desktop}>
                     <CardDetail project={project} idx={idx} />
                   </div>
-                  <div className="md:hidden">
-                    <CardDesc project={project} idx={idx} />
+                  <div className={mobile}>
+                    <CardMobile project={project} idx={idx} />
                   </div>
                 </motion.div>
               ))}
             </div>
           </TabsContent>
           <TabsContent value="DataScience">
-          <div className="rounded-xl w-full p-2 flex flex-col gap-y-12">
+          <div className="rounded-xl w-full p-2 flex flex-col">
               {projectsDataScience.map((project, idx) => (
                 <motion.div
                   // ref={ref}
@@ -132,11 +134,11 @@ function page() {
                     },
                   }}
                 >
-                  <div className="hidden md:block">
+                  <div className={desktop}>
                     <CardDetail project={project} idx={idx} />
                   </div>
-                  <div className="md:hidden">
-                    <CardDesc project={project} idx={idx} />
+                  <div className={mobile}>
+                    <CardMobile project={project} idx={idx} />
                   </div>
                 </motion.div>
               ))}

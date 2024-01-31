@@ -102,6 +102,7 @@ export const projectsDataScience = [
     previewUrl: "/",
     createdAt: "2023",
     TechStack: "Laravel, MySQL, Scikit-Learn, Python",
+    Status: "Under Development",
   },
   {
     id: 2,
@@ -115,5 +116,6 @@ export const projectsDataScience = [
     previewUrl: "https://crycast.000webhostapp.com/",
     createdAt: "2023",
     TechStack: "Laravel, MySQL, Bootstrap, Vanilla JS",
+    Status: "Under Development",
   },
 ];

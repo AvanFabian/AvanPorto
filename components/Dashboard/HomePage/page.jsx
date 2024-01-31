@@ -44,10 +44,10 @@ function Homepage() {
             <div className="flex flex-col mb-1 text-center">
               {/* <PiCodeThin className="text-6xl text-neutral-50" /> */}
               <h1 className=" text-2xl SpaceGroteskBold capitalize selection:bg-[#ccccc0] text-[#34373b]">
-                Recent Works
+                Works Preview
               </h1>
               <h1 className=" text-sm my-3 SpaceGroteskRegular capitalize selection:bg-[#ccccc0] text-[#34373b]">
-                Here are a few projects I've worked on recently.
+                Here are a few projects I've worked on.
               </h1>
             </div>
 
