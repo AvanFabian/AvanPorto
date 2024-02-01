@@ -18,9 +18,7 @@ export default function RootLayout({ children }) {
       <body className="bg-[#F5EFE7]">
           <div className="max-w-[78rem] md:mx-3 md:my-3 ">
             <div className=" gap-4 flex flex-col md:flex-row  ">
-              <div className="hidden lg:flex">
-                <Left />
-              </div>
+              <Left />
               {children}
               {/* <Right /> */}
             </div>

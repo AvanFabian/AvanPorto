@@ -76,7 +76,7 @@ function Leftpage() {
               </h1>
 
               <p className="text-xs SpaceGroteskMedium text-[#1E2022] mt-1 selection:bg-[#c3c8ce]">
-                Universitas Negeri Malang 🌍
+                Universitas Negeri Malang
               </p>
             </div>
 
@@ -96,8 +96,10 @@ function Leftpage() {
               <Link
                 href="/resume/Resume_Avan Fabian.pdf"
                 target="_blank"
-                className="bg-[#282828] SpaceGroteskRegular w-15 text-center select-none text-[#F0F5F9] rounded-md px-1 py-3 h-7 flex items-center justify-center text-[14px]">
-                Download CV
+                className="bg-[#282828] SpaceGroteskRegular w-15 text-center select-none text-[#F0F5F9] rounded-md px-1 h-7 flex flex-row items-center justify-center text-[14px]">
+                <div className="h-full flex flex-row justify-center items-center">
+                  Download&nbsp;CV
+                </div>
               </Link>
             </div>
           </div>
@@ -131,7 +133,7 @@ function Leftpage() {
                 <FaLinkedin className="w-[36px] h-[36px]" />
               </Link>
               <Link href="https://github.com/AvanFabian/" target="_blank">
-               <FaGithub className="w-[36px] h-[36px]" />
+                <FaGithub className="w-[36px] h-[36px]" />
               </Link>
             </div>
           </div>
