@@ -60,20 +60,10 @@ function page() {
             <div className="rounded-xl w-full p-2 flex flex-col">
               {projectsData.map((project, idx) => (
                 <motion.div
-                  // ref={ref}
                   key={project.title}
-                  initial={{ x: 300, opacity: 0 }}
-                  transition={{ duration: 0.9 }}
-                  animate={{
-                    x: 0,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.9,
-                      // delay: 0.7,
-                      type: "Tween",
-                      stiffness: 200,
-                    },
-                  }}
+                  initial={{ opacity: 0.5, scale: 0.2 }}
+                  transition={{ duration: 1.5 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
                 >
                   <div className={desktop}>
                     <CardDetail project={project} idx={idx} />

@@ -156,14 +156,14 @@ function Homepage() {
           </div>
         </CardBg>
         {/* Certificates Section */}
-        <CardBg>
+        {/* <CardBg>
 
           <Heading title="Certification" desc="Here are some of my certificates." />
 
           <div className="">
 
           </div>
-        </CardBg>
+        </CardBg> */}
       </div>
     </motion.div>
   );
