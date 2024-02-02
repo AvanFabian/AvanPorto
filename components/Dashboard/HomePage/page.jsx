@@ -3,22 +3,19 @@ import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { projectsData } from "@/utils/projects";
+import { projectsData, projectsDataPreview } from "@/utils/projects";
 import { FaArrowRight } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaRobot } from "react-icons/fa";
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 import Card from "./Card";
 import CardBg from "@/utils/cardbg";
 import { Heading } from "./Heading";
+import CardMobile from "./CardMobile";
 
 function Homepage() {
   // const [isHovered, setIsHovered] = React.useState(false);
   const [isHovered, setIsHovered] = useState(new Array(projectsData.length).fill(false));
-
-  const [ref, inView] = useInView({
-    triggerOnce: false, // Change to false if you want the animation to trigger again whenever it comes into view
-  });
 
   return (
     <motion.div
@@ -44,28 +41,20 @@ function Homepage() {
 
             <Heading title="Works Preview" desc="Here are a few projects I've worked on." />
 
-            <div className="rounded-xl w-full p-2 grid grid-cols-2 gap-y-3">
-              {projectsData.map((project, idx) => (
+            <div className="rounded-xl w-full p-2 flex flex-col lg:grid lg:grid-cols-2 gap-y-3">
+              {projectsDataPreview.map((project, idx) => (
                 <motion.div
-                  ref={ref}
                   key={project.title}
-                  initial={{ x: 300, opacity: 0 }}
-                  transition={{ duration: 0.9 }}
-                  animate={inView ? {
-                    x: 0,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.9,
-                      // delay: 0.7,
-                      type: "Tween",
-                      stiffness: 200,
-                    },
-                  } : {
-                    x: 300,
-                    opacity: 0,
-                  }}
+                  initial={{ opacity: 0.5, scale: 0.2 }}
+                  transition={{ duration: 1.5 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
                 >
-                  <Card project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered} />
+                  <div className="hidden md:block">
+                    <Card project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered} />
+                  </div>
+                  <div className="block md:hidden">
+                    <CardMobile project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered} />
+                  </div>
                 </motion.div>
               ))}
             </div>

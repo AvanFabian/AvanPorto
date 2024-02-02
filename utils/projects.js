@@ -89,6 +89,68 @@ export const projectsData = [
   },
 ];
 
+export const projectsDataPreview = [
+  {
+    id: 1,
+    title: "First Portfolio Website",
+    shortdesc: "My first portfolio website",
+    longdesc:
+      "Explore my first portfolio and website, built using ReactJS, showcasing my projects and skills in web development.",
+    image: "/assets/firstporto.png",
+    gitUrl: "https://github.com/AvanFabian/avan-fabian-porto",
+    previewUrl: "https://avanfabian.vercel.app/",
+    createdAt: "2023",
+    kind: "Website",
+    TechStack: "ReactJS, TailwindCSS",
+    Status: "Completed",
+  },
+  {
+    id: 2,
+    title: "Cry Cast",
+    shortdesc:
+      "Cry Cast is a cryptocurrency prediction platform that uses machine learning to predict the price of cryptocurrency.",
+    longdesc:
+      "Introducing Cry Cast – the go-to platform for cryptocurrency predictions powered by advanced machine learning. A streamlined approach combines cutting-edge technology with financial insights to forecast cryptocurrency prices. Dive into the world of seamless predictions with Cry Cast and stay ahead in the dynamic realm of digital assets.",
+    image: "/assets/crycast.png",
+    gitUrl: "https://github.com/AvanFabian/cry-cast/tree/master",
+    previewUrl: "https://crycast.000webhostapp.com/",
+    createdAt: "2023",
+    kind: "Data Science",
+    TechStack: "Laravel, MySQL, Bootstrap, Vanilla JS",
+    Status: "Completed",
+  },
+  {
+    id: 3,
+    title: "PromptWorld",
+    shortdesc:
+      "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic",
+    longdesc:
+      "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic.",
+    image: "/assets/promptworld.png",
+    gitUrl: "https://github.com/AvanFabian/next-fs-gptsharing",
+    previewUrl: "https://promptworld-danis.vercel.app/",
+    createdAt: "2023",
+    kind: "Website",
+    TechStack: "NextJS, TailwindCSS, MongoDB",
+    Status: "Under Development",
+  },
+  {
+    id: 4,
+    title: "SchEducation",
+    shortdesc:
+      "Final Project of Innovation Management Lecture. SchEducation is simply an school online course, all of material provided by the Teacher there.",
+    longdesc:
+      "Welcome to the culmination of my efforts in the Innovation Management Lecture – presenting the final project, SchEducation. This innovative project is a comprehensive online school course that brings a new dimension to education. Designed with meticulous attention to detail, SchEducation offers a dynamic learning experience where all course materials are thoughtfully curated and provided by dedicated teachers",
+    image: "/assets/scheducation.png",
+    gitUrl: "https://github.com/AvanFabian/SchEducation",
+    previewUrl: "https://sch-education.vercel.app/",
+    createdAt: "2023",
+    kind: "Website",
+    TechStack: "NextJS, TailwindCSS, MongoDB",
+    Status: "Under Development",
+  },
+];
+
 export const projectsDataScience = [
   {
     id: 1,

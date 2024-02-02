@@ -14,11 +14,11 @@ const Card = ({ project, idx, isHovered, setIsHovered }) => {
         <Image
           width={400}
           height={235}
-          className={`w-[400px] mx-auto h-[235px] bg-cover rounded-lg select-none transition-opacity duration-200 ease-in ${isHovered[idx] ? "opacity-10" : "opacity-100"}`}
+          className={`w-[400px] mx-auto h-[235px] bg-cover rounded-lg select-none duration-200 transition-all ease-in ${isHovered[idx] ? "opacity-10" : "opacity-100"}`}
           src={project.image}
           alt={project.title}
         />
-        {/* <div className="absolute top-0 opacity-0 hover:opacity-100 px-8 py-7 duration-200 transition-all ease-in"></div> */}
+
         <div
           className={`hidden lg:flex absolute top-0 left-0 px-7 py-5 w-[400px] h-[235px] flex-col justify-between duration-200 transition-all ease-in ${isHovered[idx] ? "opacity-100" : "opacity-0"}`}
           onMouseEnter={() => {
@@ -36,8 +36,7 @@ const Card = ({ project, idx, isHovered, setIsHovered }) => {
               newIsHovered[idx] = false;
               return newIsHovered;
             });
-          }}
-        >
+          }}>
           <h1 className="text-xl font-bold text-left mx-auto select-none">{project.title}</h1>
           <p className="text-[13px] font-bold text-[#6d6c6c] mx-auto text-left select-none">{project.shortdesc}</p>
 
