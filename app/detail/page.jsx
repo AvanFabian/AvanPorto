@@ -16,6 +16,9 @@ const desktop = "hidden lg:block my-8";
 const mobile = "lg:hidden";
 
 function page() {
+  // const isBrowser = () => typeof window !== 'undefined';
+
+  // console.log(`isBrowser: ${isBrowser()}`);
 
   return (
     <motion.div
@@ -34,7 +37,7 @@ function page() {
       }}
     >
 
-      <div className="sticky top-0 z-50">
+      <div className="sticky top-0 z-50 p-2">
         <div className="bg-[#282828] opacity-80 backdrop-blur-md h-10 w-full lg:w-fit lg:rounded-xl flex items-center gap-x-3 ">
           <Link href={"/"} className="flex flex-row justify-center">
             <div className="h-8 w-8 rounded-full flex items-center justify-center">
