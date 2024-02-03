@@ -12,6 +12,7 @@ export const projectsData = [
     kind: "Website",
     TechStack: "ReactJS, TailwindCSS",
     Status: "Completed",
+    Hosting: "Online"
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ export const projectsData = [
     kind: "Data Science",
     TechStack: "Laravel, MySQL, Bootstrap, Vanilla JS",
     Status: "Completed",
+    Hosting: "Online"
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ export const projectsData = [
     kind: "Website",
     TechStack: "NextJS, TailwindCSS, MongoDB",
     Status: "Under Development",
+    Hosting: "Online"
   },
   {
     id: 4,
@@ -57,6 +60,7 @@ export const projectsData = [
     kind: "Website",
     TechStack: "NextJS, TailwindCSS, MongoDB",
     Status: "Under Development",
+    Hosting: "Online"
   },
   {
     id: 5,
@@ -71,6 +75,7 @@ export const projectsData = [
     kind: "Website",
     TechStack: "NextJS, TailwindCSS, Supabase, ContentLayer",
     Status: "Under Development",
+    Hosting: "Not Hosted yet"
   },
   {
     id: 6,
@@ -86,6 +91,7 @@ export const projectsData = [
     kind: "Data Science",
     TechStack: "Laravel, MySQL, Scikit-Learn, Python",
     Status: "Under Development",
+    Hosting: "Not Hosted yet"
   },
 ];
 
@@ -103,6 +109,7 @@ export const projectsDataPreview = [
     kind: "Website",
     TechStack: "ReactJS, TailwindCSS",
     Status: "Completed",
+    Hosting: "Online"
   },
   {
     id: 2,
@@ -118,6 +125,7 @@ export const projectsDataPreview = [
     kind: "Data Science",
     TechStack: "Laravel, MySQL, Bootstrap, Vanilla JS",
     Status: "Completed",
+    Hosting: "Online"
   },
   {
     id: 3,
@@ -133,6 +141,7 @@ export const projectsDataPreview = [
     kind: "Website",
     TechStack: "NextJS, TailwindCSS, MongoDB",
     Status: "Under Development",
+    Hosting: "Online"
   },
   {
     id: 4,
@@ -148,6 +157,7 @@ export const projectsDataPreview = [
     kind: "Website",
     TechStack: "NextJS, TailwindCSS, MongoDB",
     Status: "Under Development",
+    Hosting: "Online"
   },
 ];
 
@@ -165,6 +175,7 @@ export const projectsDataScience = [
     createdAt: "2023",
     TechStack: "Laravel, MySQL, Scikit-Learn, Python",
     Status: "Under Development",
+    Hosting: "Not Hosted yet"
   },
   {
     id: 2,
@@ -179,5 +190,6 @@ export const projectsDataScience = [
     createdAt: "2023",
     TechStack: "Laravel, MySQL, Bootstrap, Vanilla JS",
     Status: "Under Development",
+    Hosting: "Online"
   },
 ];

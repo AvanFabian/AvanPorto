@@ -101,7 +101,7 @@ function Leftpage() {
             {/* <h2 className="SpaceGroteskBold text-base my-2 selection:bg-[#c3c8ce]">Social Media</h2> */}
             <div className="w-full items-center flex flex-row gap-x-7">
               <Link
-                href={`https://wa.me/081234566046?text=Hello, I would like to ask about your product.`}
+                href={`https://wa.me/081234566046?text=Hello, Discuss with me for some Opportunity!`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
