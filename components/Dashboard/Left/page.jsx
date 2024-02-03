@@ -11,35 +11,13 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 function Leftpage() {
-  const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
 
   const controls = useAnimation();
-
-  const handleChange = (e) => {
-    setEmail(e.target.value);
-  };
-
+  
+  // Email validator
   const isValidEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (isValidEmail(email)) {
-      setEmail("");
-    } else {
-      controls.start({
-        x: 0,
-        transition: {
-          type: "spring",
-          velocity: "600",
-          stiffness: "5000",
-          damping: 15,
-        },
-      });
-    }
   };
 
   return (
@@ -57,10 +35,10 @@ function Leftpage() {
             stiffness: 200,
           },
         }}
-        className=" hidden md:block rounded-2xl w-full md:w-80 sticky h-fit top-0"
+        className="rounded-2xl w-full hidden lg:block lg:w-80 sticky h-fit top-0"
       >
 
-        <div className=" md:w-80 w-full p-3 border border-neutral-400 rounded-2xl h-fit bg-[#ebe5dd]">
+        <div className="lg:w-80 w-full p-3 border border-neutral-400 rounded-2xl h-fit bg-[#ebe5dd]">
           <div className="flex">
             <div
               className="w-full relative basis-4/6">

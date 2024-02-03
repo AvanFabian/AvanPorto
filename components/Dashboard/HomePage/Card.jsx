@@ -37,7 +37,7 @@ const Card = ({ project, idx, isHovered, setIsHovered }) => {
           alt={project.title}
         />
           <Link 
-            href={`${project.previewUrl}`}
+            href={`${project.gitUrl}`}
             target="_blank" 
             rel="noopener noreferrer"
             className="cursor-pointer z-20 justify-center absolute top-0 right-6 flex w-[30px] h-[30px] font-bold text-[#34373b] text-[13px] items-center 

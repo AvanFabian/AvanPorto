@@ -12,7 +12,7 @@ import ScrollToTop from "react-scroll-to-top";
 
 
 function Homepage() {
-  const [isHovered, setIsHovered] = useState(new Array(projectsData.length).fill(false));
+  const [isHovered, setIsHovered] = useState(new Array(projectsDataPreview.length).fill(false));
 
   return (
     <>
@@ -31,8 +31,8 @@ function Homepage() {
             stiffness: 200,
           },
         }}
-        className="w-fit ml-4">
-        <div className="flex flex-col gap-4 bg-[#1C1C1C] lg:bg-transparent rounded-2xl ">
+        className="w-fit mx-auto lg:ml-4">
+        <div className="flex flex-col gap-y-2 lg:gap-4 lg:bg-transparent rounded-2xl ">
           {/* Works Preview Section */}
           <CardBg>
             <div id="firstsection">
@@ -47,10 +47,10 @@ function Homepage() {
                     transition={{ duration: 1.5 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                   >
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                       <Card project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered} />
                     </div>
-                    <div className="block md:hidden">
+                    <div className="block lg:hidden">
                       <CardMobile project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered} />
                     </div>
                   </motion.div>

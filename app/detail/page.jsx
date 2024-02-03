@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
+import { useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { projectsData, projectsDataScience } from "@/utils/projects";
@@ -16,7 +17,7 @@ const desktop = "hidden lg:block my-8";
 const mobile = "lg:hidden";
 
 function page() {
-  // const isBrowser = () => typeof window !== 'undefined';
+  const [isHovered, setIsHovered] = useState(new Array(projectsData.length).fill(false));
 
   // console.log(`isBrowser: ${isBrowser()}`);
 
@@ -52,9 +53,9 @@ function page() {
         </div>
       </div>
       {/* card */}
-      <div className="lg:my-8 mx-[8px] lg:mx-0 w-full flex flex-col">
+      <div className="mx-[8px] lg:mx-0 w-full flex flex-col">
         <Tabs defaultValue="All" className="w-full gap-x-3 items-center justify-center ">
-          <TabsList className="w-full grid grid-cols-2 gap-y-2 mt-6 lg:mt-0 lg:flex items-center gap-x-2 lg:mb-4 bg-[#F5EFE7]">
+          <TabsList className="w-full grid grid-cols-2 gap-y-2 mt-3 lg:mt-0 lg:flex items-center gap-x-2 lg:mb-4 bg-[#F5EFE7]">
             <TabsTrigger value="All" className="px-6 py-2 rounded-xl activebgtabs bg-[#282828] text-[#E1E4E6]">All</TabsTrigger>
             <TabsTrigger value="Website" className="px-6 py-2 rounded-xl activebgtabs bg-[#282828] text-[#E1E4E6]">Website</TabsTrigger>
             <TabsTrigger value="DataScience" className="px-6 py-2 rounded-xl activebgtabs bg-[#282828] text-[#E1E4E6]">Data Science</TabsTrigger>
@@ -68,9 +69,10 @@ function page() {
                   initial={{ opacity: 0.5, scale: 0.2 }}
                   transition={{ duration: 1.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}
+                  className=""
                 >
                   <div className={desktop}>
-                    <CardDetail project={project} idx={idx} />
+                    <CardDetail project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered}/>
                   </div>
                   <div className={mobile}>
                     <CardMobile project={project} idx={idx} />
@@ -91,7 +93,7 @@ function page() {
                   whileInView={{ opacity: 1, scale: 1 }}
                 >
                   <div className={desktop}>
-                    <CardDetail project={project} idx={idx} />
+                    <CardDetail project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered}/>
                   </div>
                   <div className={mobile}>
                     <CardMobile project={project} idx={idx} />
@@ -111,7 +113,7 @@ function page() {
                   whileInView={{ opacity: 1, scale: 1 }}
                 >
                   <div className={desktop}>
-                    <CardDetail project={project} idx={idx} />
+                    <CardDetail project={project} idx={idx} isHovered={isHovered} setIsHovered={setIsHovered}/>
                   </div>
                   <div className={mobile}>
                     <CardMobile project={project} idx={idx} />
