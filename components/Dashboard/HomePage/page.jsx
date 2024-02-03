@@ -164,9 +164,7 @@ function Homepage() {
         </CardBg> */}
         </div>
       </motion.div>
-      {/* <div className="absolute bottom-0 right-1"> */}
-        {/* <ScrollToTopButton smooth color="#6f00ff"/> */}
-      {/* </div> */}
+
     </>
   );
 }
