@@ -34,6 +34,7 @@
     "react-hook-form": "^7.49.3",
     "react-icons": "^4.11.0",
     "react-scroll-to-top": "^3.0.0",
+    "react-spinners": "^0.13.8",
     "react-vertical-timeline-component": "^3.6.0",
     "resend": "^0.15.3",
     "tailwind-merge": "^2.2.0",

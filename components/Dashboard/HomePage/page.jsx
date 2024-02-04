@@ -8,7 +8,6 @@ import Card from "./Card";
 import CardBg from "@/utils/cardbg";
 import { Heading } from "./Heading";
 import CardMobile from "./CardMobile";
-import ScrollToTop from "react-scroll-to-top";
 
 
 function Homepage() {
@@ -73,10 +72,9 @@ function Homepage() {
                 <div className="w-full flex flex-row">
                   <motion.div
                     className="flex flex-col"
-                    initial={{ x: -200, opacity: 0 }}
-                    // animate={{ x: 0, opacity: 1 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.9 }}
+                    initial={{ opacity: 0.5, scale: 0.2 }}
+                    transition={{ duration: 1.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                   >
                     <div className="w-full my-8 gap-y-3 items-center text-center flex flex-col gap-3">
                       <FaReact className="w-[100px] h-[100px]" />
@@ -112,10 +110,9 @@ function Homepage() {
                   </motion.div>
                   <motion.div
                     className="flex flex-col"
-                    initial={{ x: 200, opacity: 0 }}
-                    // animate={{ x: 0, opacity: 1 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.9 }}
+                    initial={{ opacity: 0.5, scale: 0.2 }}
+                    transition={{ duration: 1.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                   >
                     <div className="w-full my-8 gap-y-3 items-center text-center flex flex-col gap-3">
                       <FaRobot className="w-[100px] h-[100px]" />

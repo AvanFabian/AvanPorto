@@ -1,9 +1,7 @@
 "use client";
-import React, { useState } from "react";
-
 import ContactForm from "@/components/Dashboard/Left/ContactForm"
 
-import { motion, useAnimation } from "framer-motion";
+import { motion, } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { FaWhatsappSquare } from "react-icons/fa";
@@ -11,14 +9,11 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 function Leftpage() {
-  const [email, setEmail] = useState("");
-
-  const controls = useAnimation();
   
   // Email validator
-  const isValidEmail = (email) => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  };
+  // const isValidEmail = (email) => {
+  //   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  // };
 
   return (
     <div>
@@ -35,7 +30,7 @@ function Leftpage() {
             stiffness: 200,
           },
         }}
-        className="rounded-2xl w-full hidden lg:block lg:w-80 sticky h-fit top-0"
+        className="rounded-2xl w-full lg:w-80 sticky h-fit top-0"
       >
 
         <div className="lg:w-80 w-full p-3 border border-neutral-400 rounded-2xl h-fit bg-[#ebe5dd]">
